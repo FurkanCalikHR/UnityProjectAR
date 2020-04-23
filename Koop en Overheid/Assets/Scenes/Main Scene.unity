@@ -233,7 +233,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 760773979}
+  - {fileID: 742161217}
   - {fileID: 816358218}
   m_Father: {fileID: 1570593152}
   m_RootOrder: 1
@@ -852,7 +852,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708987600}
   m_CullTransparentMesh: 0
---- !u!1 &760773978
+--- !u!1 &742161216
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -860,9 +860,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 760773979}
-  - component: {fileID: 760773981}
-  - component: {fileID: 760773980}
+  - component: {fileID: 742161217}
+  - component: {fileID: 742161219}
+  - component: {fileID: 742161218}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -870,13 +870,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &760773979
+--- !u!224 &742161217
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760773978}
+  m_GameObject: {fileID: 742161216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -889,13 +889,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 560, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &760773980
+--- !u!114 &742161218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760773978}
+  m_GameObject: {fileID: 742161216}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
@@ -914,13 +914,13 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!222 &760773981
+--- !u!222 &742161219
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760773978}
+  m_GameObject: {fileID: 742161216}
   m_CullTransparentMesh: 0
 --- !u!1 &765944532
 GameObject:
