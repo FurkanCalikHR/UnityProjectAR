@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/OverScene.unity
+    guid: a89fcfd4a0473c6468d43fa1d38244d5
+  - enabled: 1
+    path: Assets/Scenes/PauzeScene.unity
+    guid: b67e624a8fab3564d8749487fa7d99a1
+  - enabled: 1
+    path: Assets/Scenes/ScoreScene.unity
+    guid: 191146ab4189f4b41970c613ea3029dd
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: d8a3ff3a15b476d4d9aa2a3afccb85ef
+  - enabled: 1
+    path: Assets/Scenes/InstellingenScene.unity
+    guid: c638d406bd946644eb1ec66d5616715d
   m_configObjects: {}
