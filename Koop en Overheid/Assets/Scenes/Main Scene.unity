@@ -1151,7 +1151,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832923774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1142806135}
+        m_MethodName: btn_change_scene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ScoreScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &832923774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,7 +1347,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 976689878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1142806135}
+        m_MethodName: btn_change_scene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OverScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &976689878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,7 +1597,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1210946560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1142806135}
+        m_MethodName: btn_change_scene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TutorialScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210946560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,7 +1951,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1623504239}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1142806135}
+        m_MethodName: btn_change_scene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: InstellingenScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1623504239
 MonoBehaviour:
   m_ObjectHideFlags: 0
