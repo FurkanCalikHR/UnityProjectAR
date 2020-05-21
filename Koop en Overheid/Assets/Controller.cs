@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
-
+    public GameObject character;
     public GameObject PanelInfo;
     private string selected = "";
 
@@ -64,6 +64,7 @@ public class Controller : MonoBehaviour
             ApplyColor(bOption, Color.white);
             ApplyColor(cOption, Color.white);
             ApplyColor(dOption, Color.white);
+            character.GetComponent<Animator>().Play("Angry");
         }
         else if(selected == "B")
         {
@@ -71,6 +72,7 @@ public class Controller : MonoBehaviour
             ApplyColor(bOption, Color.red);
             ApplyColor(cOption, Color.white);
             ApplyColor(dOption, Color.white);
+            character.GetComponent<Animator>().Play("Angry");
         }
         else if(selected == "C")
         {
@@ -78,6 +80,7 @@ public class Controller : MonoBehaviour
             ApplyColor(bOption, Color.white);
             ApplyColor(cOption, Color.red);
             ApplyColor(dOption, Color.white);
+            character.GetComponent<Animator>().Play("Angry");
         }
         else
         {
@@ -85,6 +88,7 @@ public class Controller : MonoBehaviour
             ApplyColor(bOption, Color.white);
             ApplyColor(cOption, Color.white);
             ApplyColor(dOption, Color.green);
+            character.GetComponent<Animator>().Play("Happy Idle");
         }
     }
 
