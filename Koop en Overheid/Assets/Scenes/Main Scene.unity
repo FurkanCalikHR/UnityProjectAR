@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 7118944}
   - component: {fileID: 7118943}
   - component: {fileID: 7118942}
+  - component: {fileID: 7118945}
   m_Layer: 5
   m_Name: ButtonStart
   m_TagString: Untagged
@@ -297,6 +298,17 @@ MonoBehaviour:
           m_StringArgument: Zwempie
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7118945}
+        m_MethodName: Rotate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7118943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +345,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7118940}
   m_CullTransparentMesh: 0
+--- !u!114 &7118945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7118940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbac6fe9003e574ebe26a1c58611065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: 3
 --- !u!1 &156431468
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +693,7 @@ GameObject:
   - component: {fileID: 578144655}
   - component: {fileID: 578144654}
   - component: {fileID: 578144653}
+  - component: {fileID: 578144656}
   m_Layer: 5
   m_Name: ButtonWebsite
   m_TagString: Untagged
@@ -738,7 +764,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 578144654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 578144656}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &578144654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,6 +812,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578144651}
   m_CullTransparentMesh: 0
+--- !u!114 &578144656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578144651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944cabac8e39c8f42ac4c858814860b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &708987600
 GameObject:
   m_ObjectHideFlags: 0

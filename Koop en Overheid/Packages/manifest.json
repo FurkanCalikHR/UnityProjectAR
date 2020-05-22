@@ -1,14 +1,14 @@
 {
-    "scopedRegistries": [
-        {
-            "name": "Vuforia",
-            "url": "https://registry.packages.developer.vuforia.com/",
-            "scopes": [
-                "com.ptc.vuforia"
-            ]
-        }
-    ],
-    "dependencies": {
+  "scopedRegistries": [
+    {
+      "name": "Vuforia",
+      "url": "https://registry.packages.developer.vuforia.com/",
+      "scopes": [
+        "com.ptc.vuforia"
+      ]
+    }
+  ],
+  "dependencies": {
     "com.ptc.vuforia.engine": "9.1.7",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ext.nunit": "1.0.0",
@@ -19,7 +19,6 @@
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.1.0",
     "com.unity.ugui": "1.0.0",
-    "com.unity.xr.arcore": "2.0.2",
     "com.unity.xr.arfoundation": "2.0.2",
     "com.unity.xr.arkit": "2.0.1",
     "com.unity.modules.ai": "1.0.0",
