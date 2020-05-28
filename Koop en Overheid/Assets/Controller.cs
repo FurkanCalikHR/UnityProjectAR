@@ -1,98 +1,108 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
+
+    [SerializeField]
+    private List<Question> questions;
+    private Question currentQuestion;
+
     public GameObject character;
-    public GameObject PanelInfo;
-    private string selected = "";
 
-    private bool show = false;
-    private int points = 0;
+    private int currentIndex = 0, score = 0;
 
-    public Button aOption;
-    public Button bOption;
-    public Button cOption;
-    public Button dOption;
+    public List<Button> options;
 
-    public void ShowHideInfo()
+    public TextMeshProUGUI questionAnswerDisplay, scoreDisplay;
+
+    private FinalScoreScript finalScoreScript;
+
+    void Start()
     {
-        if(!show)
+        finalScoreScript = GameObject.FindObjectOfType<FinalScoreScript>();
+        currentQuestion = questions[0];
+        if(currentQuestion != null)
         {
-            PanelInfo.SetActive(true);
-            show = true;
+            BuildDisplayText();
+        }
+    }
+
+    public void MultipleChoiceSelection(int index)
+    {
+        if(currentQuestion != null)
+        {
+            SubmitAnswer(options[index], currentQuestion.answerOptions[index]);
+        }
+    }
+
+    private void SubmitAnswer(Button button, string answer)
+    {
+        if(currentQuestion != null)
+        {
+            options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
+            if (currentQuestion.answer.Equals(answer))
+            {
+                AddScore(currentQuestion.points);
+                character.GetComponent<Animator>().Play("Happy Idle");
+                ApplyColor(button, Color.green);
+            } else
+            {
+                character.GetComponent<Animator>().Play("Angry");
+                ApplyColor(button, Color.red);
+            }
+            NextQuestion();
+        }
+    }
+
+    private void NextQuestion()
+    {
+        currentIndex = currentIndex + 1;
+        if(currentIndex < questions.Count)
+        {
+            Question nextQuestion = questions[currentIndex];
+            if (nextQuestion != null)
+            {
+                currentQuestion = nextQuestion;
+                options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
+                BuildDisplayText();
+            }
         }
         else
         {
-            PanelInfo.SetActive(false);
-            show = false;
+            EndQuiz();
         }
     }
 
-    public void SelectA()
+    private void EndQuiz()
     {
-        selected = "A";
-        SubmitAnswer();
-    }
-
-    public void SelectB()
-    {
-        selected = "B";
-        SubmitAnswer();
-    }
-
-    public void SelectC()
-    {
-        selected = "C";
-        SubmitAnswer();
-    }
-
-    public void SelectD()
-    {
-        selected = "D";
-        SubmitAnswer();
-    }
-
-    public void SubmitAnswer()
-    {
-        if (selected == "A")
+        PlayerPrefs.SetInt("latestscore", score);
+        if(PlayerPrefs.GetInt("highscore") < score)
         {
-            ApplyColor(aOption, Color.red);
-            ApplyColor(bOption, Color.white);
-            ApplyColor(cOption, Color.white);
-            ApplyColor(dOption, Color.white);
-            character.GetComponent<Animator>().Play("Angry");
+            PlayerPrefs.SetInt("highscore", score);
         }
-        else if(selected == "B")
-        {
-            ApplyColor(aOption, Color.white);
-            ApplyColor(bOption, Color.red);
-            ApplyColor(cOption, Color.white);
-            ApplyColor(dOption, Color.white);
-            character.GetComponent<Animator>().Play("Angry");
-        }
-        else if(selected == "C")
-        {
-            ApplyColor(aOption, Color.white);
-            ApplyColor(bOption, Color.white);
-            ApplyColor(cOption, Color.red);
-            ApplyColor(dOption, Color.white);
-            character.GetComponent<Animator>().Play("Angry");
-        }
-        else
-        {
-            ApplyColor(aOption, Color.white);
-            ApplyColor(bOption, Color.white);
-            ApplyColor(cOption, Color.white);
-            ApplyColor(dOption, Color.green);
-            character.GetComponent<Animator>().Play("Happy Idle");
-        }
+        Screen.orientation = ScreenOrientation.Portrait;
+        SceneManager.LoadScene(6);
     }
 
-    public void ApplyColor(Button button, Color color)
+    private void BuildDisplayText()
+    {
+        string[] optionsTags = {"A", "B", "C", "D"};
+        StringBuilder builder = new StringBuilder();
+        builder.Append((currentIndex + 1) + ". " + currentQuestion.question + "\n");
+        for(int i = 0; i < currentQuestion.answerOptions.Count; i++)
+        {
+            builder.Append(optionsTags[i] + ") " + currentQuestion.answerOptions[i] + "\n");
+        }
+        questionAnswerDisplay.text = builder.ToString();
+    }
+
+    private void ApplyColor(Button button, Color color)
     {
         var colors = button.colors;
         colors.disabledColor = color;
@@ -102,5 +112,18 @@ public class Controller : MonoBehaviour
         button.colors = colors;
     }
 
+    private void AddScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+        scoreDisplay.text = "Points: " + score;
+    }
 
+}
+
+[System.Serializable]
+public class Question
+{
+    public int points;
+    public string question, answer;
+    public List<string> answerOptions;
 }
