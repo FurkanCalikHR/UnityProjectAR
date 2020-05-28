@@ -1648,12 +1648,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbeb8fb2a0613f41bb7d3462f2a421e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questions:
+  - points: 5
+    question: Whats your name?
+    answer: Hamza
+    answerOptions:
+    - Hamza
+    - Hicham
+    - Sebastian
+    - Furkan
+  - points: 10
+    question: Whats the name of this application?
+    answer: Data Snatchers
+    answerOptions:
+    - Data Snatchers
+    - I dont know
+    - Snatchers
+    - Doesn't matter
+  - points: 5
+    question: Uhm want to finish this of now?
+    answer: Yes
+    answerOptions:
+    - Yes
+    - Yes
+    - No
+    - Yes
   character: {fileID: 1415449916}
-  PanelInfo: {fileID: 738774901}
-  aOption: {fileID: 1344462071}
-  bOption: {fileID: 1988033803}
-  cOption: {fileID: 873700163}
-  dOption: {fileID: 1436346761}
+  options:
+  - {fileID: 1344462071}
+  - {fileID: 1988033803}
+  - {fileID: 873700163}
+  - {fileID: 1436346761}
+  questionAnswerDisplay: {fileID: 1419820302}
+  scoreDisplay: {fileID: 2139635320}
 --- !u!4 &699604475
 Transform:
   m_ObjectHideFlags: 0
@@ -2209,12 +2236,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 699604474}
-        m_MethodName: SelectC
-        m_Mode: 1
+        m_MethodName: MultipleChoiceSelection
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3734,8 +3761,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 699604474}
-        m_MethodName: SelectA
-        m_Mode: 1
+        m_MethodName: MultipleChoiceSelection
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4208,12 +4235,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 699604474}
-        m_MethodName: SelectD
-        m_Mode: 1
+        m_MethodName: MultipleChoiceSelection
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5544,12 +5571,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 699604474}
-        m_MethodName: SelectB
-        m_Mode: 1
+        m_MethodName: MultipleChoiceSelection
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
