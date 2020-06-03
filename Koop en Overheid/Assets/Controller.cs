@@ -13,19 +13,19 @@ public class Controller : MonoBehaviour
     private List<Question> questions;
     private Question currentQuestion;
 
-    public GameObject character;
+    public List<GameObject> characters;
 
-    private int currentIndex = 0, score = 0;
+    private int currentIndex = 0, score = 0, currentCharacterIndex = 0;
 
     public List<Button> options;
 
     public TextMeshProUGUI questionAnswerDisplay, scoreDisplay;
 
-    private FinalScoreScript finalScoreScript;
 
     void Start()
     {
-        finalScoreScript = GameObject.FindObjectOfType<FinalScoreScript>();
+        characters.ForEach(chars => chars.SetActive(false));
+        characters[0].SetActive(true);
         currentQuestion = questions[0];
         if(currentQuestion != null)
         {
@@ -49,11 +49,12 @@ public class Controller : MonoBehaviour
             if (currentQuestion.answer.Equals(answer))
             {
                 AddScore(currentQuestion.points);
-                character.GetComponent<Animator>().Play("Happy Idle");
+                CharacterSwap();
+                characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
                 ApplyColor(button, Color.green);
             } else
             {
-                character.GetComponent<Animator>().Play("Angry");
+                characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
             }
             NextQuestion();
@@ -62,7 +63,7 @@ public class Controller : MonoBehaviour
 
     private void NextQuestion()
     {
-        currentIndex = currentIndex + 1;
+        currentIndex += 1;
         if(currentIndex < questions.Count)
         {
             Question nextQuestion = questions[currentIndex];
@@ -77,6 +78,36 @@ public class Controller : MonoBehaviour
         {
             EndQuiz();
         }
+    }
+
+    private void CharacterSwap()
+    {
+        if(currentCharacterIndex < characters.Count)
+        {
+            if (score >= 0 && score <= 10)
+            {
+                SetCharacterActive(0);
+            }
+            else if(score >= 11 && score <= 25)
+            {
+                SetCharacterActive(1);
+            }
+            else if (score >= 26 && score <= 75)
+            {
+                SetCharacterActive(2);
+            }
+            else if (score >= 76 && score <= 100)
+            {
+                SetCharacterActive(3);
+            }
+        }
+    }
+
+    private void SetCharacterActive(int index)
+    {
+        currentCharacterIndex = index;
+        characters.ForEach(chars => chars.SetActive(false));
+        characters[currentCharacterIndex].SetActive(true);
     }
 
     private void EndQuiz()
