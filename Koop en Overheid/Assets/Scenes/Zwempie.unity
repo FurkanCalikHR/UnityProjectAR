@@ -1679,32 +1679,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - points: 5
-    question: Whats your name?
-    answer: Hamza
+  - points: 1
+    question: Waar staat de afkorting WOB voor?
+    answer: Wet openbaarheid van bestuur
     answerOptions:
-    - Hamza
-    - Hicham
-    - Sebastian
-    - Furkan
-  - points: 10
-    question: Whats the name of this application?
-    answer: Data Snatchers
+    - Wet openbaarheid van bestuur
+    - Wet ondermijning van bestuur
+    - Wet overheid en besluitvorming
+    - Wet overheid en bediening
+  - points: 1
+    question: Wat is het doel van de WOB
+    answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
-    - Data Snatchers
-    - I dont know
-    - Snatchers
-    - Doesn't matter
-  - points: 5
-    question: Uhm want to finish this of now?
-    answer: Yes
+    - Het kunnen weigeren van overheidsdocumenten
+    - Een gelijke marktconcurrentie te bevorderen
+    - Besluitvorming van de overheid transparanter maken
+    - Overheidsinstanties beschermen
+  - points: 1
+    question: Wat kan er worden opgevraagd met een WOB-verzoek?
+    answer: A, B en C
     answerOptions:
-<<<<<<< Updated upstream
-    - Yes
-    - Yes
-    - No
-    - Yes
-=======
+    - "Offici\xEBle overheidsdocumenten"
+    - Geluidsopnames
+    - WhatsApp berichten tussen ambtenaren
+    - A, B en C
+  - points: 1
+    question: Hoelang mag de overheid doen over een WOB-verzoek?
+    answer: Twee maanden
+    answerOptions:
     - Vier weken
     - Een jaar
     - Twee maanden
@@ -1734,7 +1736,6 @@ MonoBehaviour:
     - Niet Waar
     - Alleen bij een WOB-verzoek
     - Alleen bij een WHO-verzoek
->>>>>>> Stashed changes
   characters:
   - {fileID: 1244396436}
   - {fileID: 1415449916}
