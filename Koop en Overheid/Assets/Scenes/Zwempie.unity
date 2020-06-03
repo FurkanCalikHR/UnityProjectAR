@@ -1699,10 +1699,42 @@ MonoBehaviour:
     question: Uhm want to finish this of now?
     answer: Yes
     answerOptions:
+<<<<<<< Updated upstream
     - Yes
     - Yes
     - No
     - Yes
+=======
+    - Vier weken
+    - Een jaar
+    - Twee maanden
+    - Zo lang als nodig
+  - points: 1
+    question: Wat is het verschil tussen een WOB- en WHO-verzoek?
+    answer: De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
+    answerOptions:
+    - De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
+    - Met een WHO-verzoek kan alleen informatie van de tweede kamer worden opgevraagd
+    - De informatie van een WHO-verzoek kan alleen gebruikt worden tussen overheidsinstanties
+    - De verzoeken hebben geen verschil
+  - points: 1
+    question: Een WOB- of WHO-verzoek kan geweigerd worden als het...
+    answer: A, B en C
+    answerOptions:
+    - De veiligheid van de staat zou kunnen schaden
+    - De eenheid van de kroon in gevaar zou kunnen brengen
+    - Inbreuk maakt op de persoonlijke levenssfeer
+    - A, B en C
+  - points: 1
+    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
+      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
+    answer: Waar
+    answerOptions:
+    - Waar
+    - Niet Waar
+    - Alleen bij een WOB-verzoek
+    - Alleen bij een WHO-verzoek
+>>>>>>> Stashed changes
   characters:
   - {fileID: 1244396436}
   - {fileID: 1415449916}
