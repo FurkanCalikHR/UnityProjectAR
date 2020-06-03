@@ -1649,7 +1649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - points: 5
+  - points: 1
     question: Waar staat de afkorting WOB voor?
     answer: Wet openbaarheid van bestuur
     answerOptions:
@@ -1657,7 +1657,7 @@ MonoBehaviour:
     - Wet ondermijning van bestuur
     - Wet overheid en besluitvorming
     - Wet overheid en bediening
-  - points: 10
+  - points: 1
     question: Wat is het doel van de WOB
     answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
@@ -1665,7 +1665,7 @@ MonoBehaviour:
     - Een gelijke marktconcurrentie te bevorderen
     - Besluitvorming van de overheid transparanter maken
     - Overheidsinstanties beschermen
-  - points: 5
+  - points: 1
     question: Wat kan er worden opgevraagd met een WOB-verzoek?
     answer: A, B en C
     answerOptions:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
     - Geluidsopnames
     - WhatsApp berichten tussen ambtenaren
     - A, B en C
-  - points: 5
+  - points: 1
     question: Hoelang mag de overheid doen over een WOB-verzoek?
     answer: Twee maanden
     answerOptions:
@@ -1681,7 +1681,7 @@ MonoBehaviour:
     - Een jaar
     - Twee maanden
     - Zo lang als nodig
-  - points: 5
+  - points: 1
     question: Wat is het verschil tussen een WOB- en WHO-verzoek?
     answer: De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
     answerOptions:
@@ -1689,7 +1689,7 @@ MonoBehaviour:
     - Met een WHO-verzoek kan alleen informatie van de tweede kamer worden opgevraagd
     - De informatie van een WHO-verzoek kan alleen gebruikt worden tussen overheidsinstanties
     - De verzoeken hebben geen verschil
-  - points: 5
+  - points: 1
     question: Een WOB- of WHO-verzoek kan geweigerd worden als het...
     answer: A, B en C
     answerOptions:
@@ -1697,7 +1697,7 @@ MonoBehaviour:
     - De eenheid van de kroon in gevaar zou kunnen brengen
     - Inbreuk maakt op de persoonlijke levenssfeer
     - A, B en C
-  - points: 5
+  - points: 1
     question: Indien de aanvrager van een WOB/WHO-verzoek het vermoeden heeft dat
       de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
     answer: Waar
