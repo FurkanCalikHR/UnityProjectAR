@@ -21,6 +21,8 @@ public class Controller : MonoBehaviour
 
     public TextMeshProUGUI questionAnswerDisplay, scoreDisplay;
 
+    public Slider slider;
+
 
     void Start()
     {
@@ -58,6 +60,7 @@ public class Controller : MonoBehaviour
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
             }
+            UpdateProgressBar();
             NextQuestion();
         }
     }
@@ -102,6 +105,12 @@ public class Controller : MonoBehaviour
                 SetCharacterActive(3);
             }
         }
+    }
+
+    private void UpdateProgressBar()
+    {
+        float val = ((float) questions.Count) / ((float) (currentIndex + 1));
+        slider.value = (float) (1.0f / val);
     }
 
     private void SetCharacterActive(int index)
