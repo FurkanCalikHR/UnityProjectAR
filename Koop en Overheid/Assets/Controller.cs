@@ -15,15 +15,18 @@ public class Controller : MonoBehaviour
 
     public List<GameObject> characters;
 
-    private int currentIndex = 0, score = 0, currentCharacterIndex = 0;
+    private int currentIndex = 0, age = 0, currentCharacterIndex = 0;
 
     public List<Button> options;
 
     public TextMeshProUGUI questionAnswerDisplay, scoreDisplay;
 
+    public Slider slider;
+
 
     void Start()
     {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         characters.ForEach(chars => chars.SetActive(false));
         characters[0].SetActive(true);
         currentQuestion = questions[0];
@@ -48,7 +51,7 @@ public class Controller : MonoBehaviour
             options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
             if (currentQuestion.answer.Equals(answer))
             {
-                AddScore(currentQuestion.points);
+                AddAge(currentQuestion.points);
                 CharacterSwap();
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
                 ApplyColor(button, Color.green);
@@ -57,6 +60,7 @@ public class Controller : MonoBehaviour
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
             }
+            UpdateProgressBar();
             NextQuestion();
         }
     }
@@ -84,23 +88,29 @@ public class Controller : MonoBehaviour
     {
         if(currentCharacterIndex < characters.Count)
         {
-            if (score >= 0 && score <= 10)
+            if (age >= 0 && age <= 5)
             {
                 SetCharacterActive(0);
             }
-            else if(score >= 11 && score <= 25)
+            else if(age >= 6 && age <= 11)
             {
                 SetCharacterActive(1);
             }
-            else if (score >= 26 && score <= 75)
+            else if (age >= 12 && age <= 18)
             {
                 SetCharacterActive(2);
             }
-            else if (score >= 76 && score <= 100)
+            else if (age >= 19)
             {
                 SetCharacterActive(3);
             }
         }
+    }
+
+    private void UpdateProgressBar()
+    {
+        float val = ((float) questions.Count) / ((float) (currentIndex + 1));
+        slider.value = (float) (1.0f / val);
     }
 
     private void SetCharacterActive(int index)
@@ -112,10 +122,10 @@ public class Controller : MonoBehaviour
 
     private void EndQuiz()
     {
-        PlayerPrefs.SetInt("latestscore", score);
-        if(PlayerPrefs.GetInt("highscore") < score)
+        PlayerPrefs.SetInt("latestage", age);
+        if(PlayerPrefs.GetInt("highscore") < age)
         {
-            PlayerPrefs.SetInt("highscore", score);
+            PlayerPrefs.SetInt("highscore", age);
         }
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(6);
@@ -143,10 +153,10 @@ public class Controller : MonoBehaviour
         button.colors = colors;
     }
 
-    private void AddScore(int scoreToAdd)
+    private void AddAge(int ageToAdd)
     {
-        score += scoreToAdd;
-        scoreDisplay.text = "Points: " + score;
+        age += ageToAdd;
+        scoreDisplay.text = "Leeftijd: " + age;
     }
 
 }

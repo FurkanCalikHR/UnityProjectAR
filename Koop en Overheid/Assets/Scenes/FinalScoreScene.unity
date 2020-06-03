@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 1221086119}
   - component: {fileID: 1221086118}
   m_Layer: 5
-  m_Name: LatestScore
+  m_Name: LatestAge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Latest Score: 0'
+  m_Text: 'Leeftijd Bereikt: 0'
 --- !u!222 &1221086119
 CanvasRenderer:
   m_ObjectHideFlags: 0
