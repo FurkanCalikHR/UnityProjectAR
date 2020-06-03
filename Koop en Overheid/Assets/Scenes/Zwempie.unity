@@ -1649,30 +1649,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - points: 5
-    question: Whats your name?
-    answer: Hamza
+  - points: 1
+    question: Waar staat de afkorting WOB voor?
+    answer: Wet openbaarheid van bestuur
     answerOptions:
-    - Hamza
-    - Hicham
-    - Sebastian
-    - Furkan
-  - points: 10
-    question: Whats the name of this application?
-    answer: Data Snatchers
+    - Wet openbaarheid van bestuur
+    - Wet ondermijning van bestuur
+    - Wet overheid en besluitvorming
+    - Wet overheid en bediening
+  - points: 1
+    question: Wat is het doel van de WOB
+    answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
-    - Data Snatchers
-    - I dont know
-    - Snatchers
-    - Doesn't matter
-  - points: 5
-    question: Uhm want to finish this of now?
-    answer: Yes
+    - Het kunnen weigeren van overheidsdocumenten
+    - Een gelijke marktconcurrentie te bevorderen
+    - Besluitvorming van de overheid transparanter maken
+    - Overheidsinstanties beschermen
+  - points: 1
+    question: Wat kan er worden opgevraagd met een WOB-verzoek?
+    answer: A, B en C
     answerOptions:
-    - Yes
-    - Yes
-    - No
-    - Yes
+    - "Offici\xEBle overheidsdocumenten"
+    - Geluidsopnames
+    - WhatsApp berichten tussen ambtenaren
+    - A, B en C
+  - points: 1
+    question: Hoelang mag de overheid doen over een WOB-verzoek?
+    answer: Twee maanden
+    answerOptions:
+    - Vier weken
+    - Een jaar
+    - Twee maanden
+    - Zo lang als nodig
+  - points: 1
+    question: Wat is het verschil tussen een WOB- en WHO-verzoek?
+    answer: De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
+    answerOptions:
+    - De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
+    - Met een WHO-verzoek kan alleen informatie van de tweede kamer worden opgevraagd
+    - De informatie van een WHO-verzoek kan alleen gebruikt worden tussen overheidsinstanties
+    - De verzoeken hebben geen verschil
+  - points: 1
+    question: Een WOB- of WHO-verzoek kan geweigerd worden als het...
+    answer: A, B en C
+    answerOptions:
+    - De veiligheid van de staat zou kunnen schaden
+    - De eenheid van de kroon in gevaar zou kunnen brengen
+    - Inbreuk maakt op de persoonlijke levenssfeer
+    - A, B en C
+  - points: 1
+    question: Indien de aanvrager van een WOB/WHO-verzoek het vermoeden heeft dat
+      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
+    answer: Waar
+    answerOptions:
+    - Waar
+    - Niet Waar
   characters:
   - {fileID: 1244396436}
   - {fileID: 1415449916}
