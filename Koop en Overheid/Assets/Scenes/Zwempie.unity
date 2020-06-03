@@ -1728,12 +1728,14 @@ MonoBehaviour:
     - Inbreuk maakt op de persoonlijke levenssfeer
     - A, B en C
   - points: 1
-    question: Indien de aanvrager van een WOB/WHO-verzoek het vermoeden heeft dat
+    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
       de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
     answer: Waar
     answerOptions:
     - Waar
     - Niet Waar
+    - Alleen bij een WOB-verzoek
+    - Alleen bij een WHO-verzoek
   characters:
   - {fileID: 1244396436}
   - {fileID: 1415449916}

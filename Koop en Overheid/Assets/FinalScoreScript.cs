@@ -9,7 +9,7 @@ public class FinalScoreScript : MonoBehaviour
 
     void Start()
     {
-        latestScoreDisplayText.text = "Latest Score: " + PlayerPrefs.GetInt("latestscore");
+        latestScoreDisplayText.text = "Leeftijd Bereikt: " + PlayerPrefs.GetInt("latestage");
         highScoreDisplayText.text = "High Score: " + PlayerPrefs.GetInt("highscore");
     }
 }

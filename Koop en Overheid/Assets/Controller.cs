@@ -88,21 +88,17 @@ public class Controller : MonoBehaviour
     {
         if(currentCharacterIndex < characters.Count)
         {
-            if (age >= 0 && age <= 5)
+            if (age >= 0 && age <= 1)
             {
                 SetCharacterActive(0);
             }
-            else if(age >= 6 && age <= 11)
+            else if(age >= 2 && age <= 4)
             {
                 SetCharacterActive(1);
             }
-            else if (age >= 12 && age <= 18)
+            else if (age >= 5)
             {
                 SetCharacterActive(2);
-            }
-            else if (age >= 19)
-            {
-                SetCharacterActive(3);
             }
         }
     }
