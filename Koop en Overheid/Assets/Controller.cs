@@ -23,7 +23,6 @@ public class Controller : MonoBehaviour
 
     public Slider slider;
 
-
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -59,6 +58,7 @@ public class Controller : MonoBehaviour
             {
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
+
             }
             UpdateProgressBar();
             NextQuestion();
