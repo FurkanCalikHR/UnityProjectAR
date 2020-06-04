@@ -23,6 +23,9 @@ public class Controller : MonoBehaviour
 
     public Slider slider;
 
+    public GameObject textDisplay;
+
+    string wq;
 
     void Start()
     {
@@ -59,6 +62,7 @@ public class Controller : MonoBehaviour
             {
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
+                WrongQuestions(currentQuestion.question, currentQuestion.answer, "A: "+currentQuestion.answerOptions[0] +"\n" +"B: "+currentQuestion.answerOptions[1]+"\n"+"C: "+currentQuestion.answerOptions[2]+"\n"+"D: "+currentQuestion.answerOptions[3]);
             }
             UpdateProgressBar();
             NextQuestion();
@@ -123,6 +127,7 @@ public class Controller : MonoBehaviour
         {
             PlayerPrefs.SetInt("highscore", age);
         }
+        PlayerPrefs.SetString("AllQuestions", wq.ToString());
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(6);
     }
@@ -153,6 +158,11 @@ public class Controller : MonoBehaviour
     {
         age += ageToAdd;
         scoreDisplay.text = "Leeftijd: " + age;
+    }
+
+    public void WrongQuestions(string Q, string A, string AA)
+    {
+        wq = wq + Q+"?" + "\n\n"+ AA + "\n\n" + "Antwoord = " + A + "\n\n";
     }
 
 }
