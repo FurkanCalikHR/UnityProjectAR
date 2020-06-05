@@ -24,7 +24,7 @@ public class Controller : MonoBehaviour
 
     public Slider slider;
 
-    public GameObject textDisplay;
+    public Text correctIncorrectTextDisplay;
 
     private string wq;
 
@@ -53,19 +53,18 @@ public class Controller : MonoBehaviour
     {
         if(currentQuestion != null)
         {
-            options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
             if (currentQuestion.answer.Equals(answer))
             {
                 AddAge(currentQuestion.points);
                 CharacterSwap();
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
-                ApplyColor(button, Color.green);
+                DisplayAnswer(true);
             }
             else
             {
                 UpdateQuestionScore(currentQuestion);
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
-                ApplyColor(button, Color.red);
+                DisplayAnswer(false);
             }
             UpdateProgressBar();
             NextQuestion();
@@ -81,7 +80,6 @@ public class Controller : MonoBehaviour
             if (nextQuestion != null)
             {
                 currentQuestion = nextQuestion;
-                options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
                 BuildDisplayText();
             }
         }
@@ -160,16 +158,6 @@ public class Controller : MonoBehaviour
         questionAnswerDisplay.text = builder.ToString();
     }
 
-    private void ApplyColor(Button button, Color color)
-    {
-        var colors = button.colors;
-        colors.disabledColor = color;
-        colors.highlightedColor = color;
-        colors.selectedColor = color;
-        colors.normalColor = color;
-        button.colors = colors;
-    }
-
     private void AddAge(int ageToAdd)
     {
         age += ageToAdd;
@@ -181,6 +169,20 @@ public class Controller : MonoBehaviour
         wq = wq + currentQuestion.question + "\n\n" + "A: " + currentQuestion.answerOptions[0] + "\n" + 
             "B: " + currentQuestion.answerOptions[1] + "\n" + "C: " + currentQuestion.answerOptions[2] + "\n" +
             "D: " + currentQuestion.answerOptions[3] + "\n\n" + "Antwoord = " + currentQuestion.answer + "\n\n";
+    }
+
+    public void DisplayAnswer(bool correct)
+    {
+        StartCoroutine(ShowMessage(correct, 2));
+    }
+
+    IEnumerator ShowMessage(bool correct, float delay)
+    {
+        correctIncorrectTextDisplay.text = correct ? "Goed Gedaan! +1" : "Fout!";
+        correctIncorrectTextDisplay.enabled = true;
+        correctIncorrectTextDisplay.color = correct ? Color.green : Color.red;
+        yield return new WaitForSeconds(delay);
+        correctIncorrectTextDisplay.enabled = false;
     }
 }
 

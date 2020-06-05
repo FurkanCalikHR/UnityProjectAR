@@ -27,9 +27,12 @@ public class LoginScript : MonoBehaviour
         yield return www;
         if (www.text[0] == '0')
         {
+            Debug.Log(www.text);
             PlayerPrefs.SetInt("isLoggedIn", 1);
             PlayerPrefs.SetString("username", usernameField.text);
             PlayerPrefs.SetInt("highscore", int.Parse(www.text.Split('\t')[1]));
+            PlayerPrefs.SetString("privacyvoorwaarden", www.text.Split('\t')[2]);
+            PlayerPrefs.SetString("zwartetext", www.text.Split('\t')[3]);
             UnityEngine.SceneManagement.SceneManager.LoadScene("Main Scene");
         }
         else
@@ -47,29 +50,49 @@ public class LoginScript : MonoBehaviour
 
     private void VerifyInputFields()
     {
+        //Username Field
         if (usernameField.text.Length >= 5)
         {
-            usernameErrorLog.enabled = false;
+            if (usernameField.text.Length >= 10)
+            {
+                usernameErrorLog.text = "(Maximaal 10 tekens)";
+                usernameErrorLog.enabled = true;
+            }
+            else
+            {
+                usernameErrorLog.enabled = false;
+            }
         }
         else if (usernameField.text.Length < 5)
         {
+            usernameErrorLog.text = "(Minimaal 5 tekens)";
             usernameErrorLog.enabled = true;
         }
 
+        //Password Field
         if (passwordField.text.Length >= 6)
         {
-            passwordErrorLog.enabled = false;
+            if (passwordField.text.Length >= 12)
+            {
+                passwordErrorLog.text = "(Maximaal 12 tekens)";
+                passwordErrorLog.enabled = true;
+            }
+            else
+            {
+                passwordErrorLog.enabled = false;
+            }
         }
         else if (passwordField.text.Length < 5)
         {
+            passwordErrorLog.text = "(Minimaal 6 tekens)";
             passwordErrorLog.enabled = true;
         }
     }
 
     private void VerifyLoginButton()
     {
-        loginButton.interactable = (usernameField.text.Length >= 5 &&
-            passwordField.text.Length >= 6);
+        loginButton.interactable = ((usernameField.text.Length >= 5 && usernameField.text.Length <= 10) &&
+          (passwordField.text.Length >= 6 && passwordField.text.Length <= 12));
     }
 
     private void ResetFields()
