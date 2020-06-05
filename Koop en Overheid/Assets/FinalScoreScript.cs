@@ -11,5 +11,9 @@ public class FinalScoreScript : MonoBehaviour
     {
         latestScoreDisplayText.text = "Leeftijd Bereikt: " + PlayerPrefs.GetInt("latestage");
         highScoreDisplayText.text = "High Score: " + PlayerPrefs.GetInt("highscore");
+<<<<<<< Updated upstream
+=======
+        AllQuestions.text = PlayerPrefs.GetString("questionsscore");
+>>>>>>> Stashed changes
     }
 }

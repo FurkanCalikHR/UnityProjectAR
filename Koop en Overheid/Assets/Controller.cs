@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour
 
     [SerializeField]
     private List<Question> questions;
+
     private Question currentQuestion;
 
     public List<GameObject> characters;
@@ -23,6 +24,12 @@ public class Controller : MonoBehaviour
 
     public Slider slider;
 
+<<<<<<< Updated upstream
+=======
+    public GameObject textDisplay;
+
+    private string wq;
+>>>>>>> Stashed changes
 
     void Start()
     {
@@ -57,6 +64,7 @@ public class Controller : MonoBehaviour
                 ApplyColor(button, Color.green);
             } else
             {
+                UpdateQuestionScore(currentQuestion);
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
             }
@@ -119,10 +127,15 @@ public class Controller : MonoBehaviour
     private void EndQuiz()
     {
         PlayerPrefs.SetInt("latestage", age);
+<<<<<<< Updated upstream
         if(PlayerPrefs.GetInt("highscore") < age)
         {
             PlayerPrefs.SetInt("highscore", age);
         }
+=======
+        PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("highscore") < age ? age : PlayerPrefs.GetInt("highscore"));
+        PlayerPrefs.SetString("questionsscore", wq == null ? "You have answered everything correctly!" : wq.ToString());
+>>>>>>> Stashed changes
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(6);
     }
@@ -155,6 +168,16 @@ public class Controller : MonoBehaviour
         scoreDisplay.text = "Leeftijd: " + age;
     }
 
+<<<<<<< Updated upstream
+=======
+    public void UpdateQuestionScore(Question currentQuestion)
+    {
+        wq = wq + currentQuestion.question + "\n\n" + "A: " + currentQuestion.answerOptions[0] + "\n" + 
+            "B: " + currentQuestion.answerOptions[1] + "\n" + "C: " + currentQuestion.answerOptions[2] + "\n" +
+            "D: " + currentQuestion.answerOptions[3] + "\n\n" + "Antwoord = " + currentQuestion.answer + "\n\n";
+    }
+
+>>>>>>> Stashed changes
 }
 
 [System.Serializable]
