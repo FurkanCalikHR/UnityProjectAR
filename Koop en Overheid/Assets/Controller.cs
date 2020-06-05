@@ -60,7 +60,8 @@ public class Controller : MonoBehaviour
                 CharacterSwap();
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
                 ApplyColor(button, Color.green);
-            } else
+            }
+            else
             {
                 UpdateQuestionScore(currentQuestion);
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
@@ -127,8 +128,24 @@ public class Controller : MonoBehaviour
         PlayerPrefs.SetInt("latestage", age);
         PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("highscore") < age ? age : PlayerPrefs.GetInt("highscore"));
         PlayerPrefs.SetString("questionsscore", wq == null ? "You have answered everything correctly!" : wq.ToString());
+        CallSaveData();
         Screen.orientation = ScreenOrientation.Portrait;
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene("FinalScoreScene");
+
+    }
+
+    public void CallSaveData()
+    {
+        StartCoroutine(SaveUserData());
+    }
+
+    IEnumerator SaveUserData()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", PlayerPrefs.GetString("username"));
+        form.AddField("score", PlayerPrefs.GetInt("highscore"));
+        WWW www = new WWW("https://koopoverheid.000webhostapp.com/updatescore.php", form);
+        yield return www;
     }
 
     private void BuildDisplayText()
