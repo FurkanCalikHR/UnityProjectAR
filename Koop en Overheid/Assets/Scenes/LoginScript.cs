@@ -50,29 +50,49 @@ public class LoginScript : MonoBehaviour
 
     private void VerifyInputFields()
     {
+        //Username Field
         if (usernameField.text.Length >= 5)
         {
-            usernameErrorLog.enabled = false;
+            if (usernameField.text.Length >= 10)
+            {
+                usernameErrorLog.text = "(Maximaal 10 tekens)";
+                usernameErrorLog.enabled = true;
+            }
+            else
+            {
+                usernameErrorLog.enabled = false;
+            }
         }
         else if (usernameField.text.Length < 5)
         {
+            usernameErrorLog.text = "(Minimaal 5 tekens)";
             usernameErrorLog.enabled = true;
         }
 
+        //Password Field
         if (passwordField.text.Length >= 6)
         {
-            passwordErrorLog.enabled = false;
+            if (passwordField.text.Length >= 12)
+            {
+                passwordErrorLog.text = "(Maximaal 12 tekens)";
+                passwordErrorLog.enabled = true;
+            }
+            else
+            {
+                passwordErrorLog.enabled = false;
+            }
         }
         else if (passwordField.text.Length < 5)
         {
+            passwordErrorLog.text = "(Minimaal 6 tekens)";
             passwordErrorLog.enabled = true;
         }
     }
 
     private void VerifyLoginButton()
     {
-        loginButton.interactable = (usernameField.text.Length >= 5 &&
-            passwordField.text.Length >= 6);
+        loginButton.interactable = ((usernameField.text.Length >= 5 && usernameField.text.Length <= 10) &&
+          (passwordField.text.Length >= 6 && passwordField.text.Length <= 12));
     }
 
     private void ResetFields()
