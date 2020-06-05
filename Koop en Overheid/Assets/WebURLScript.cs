@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class WebURLScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public void Open()
     {
         Application.OpenURL("https://www.koopoverheid.nl/");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DownloadPdf()
     {
-        
+        Application.OpenURL("https://data.overheid.nl/sites/default/files/uploaded_files/Handreiking%20data.overheid.nl%202.0.pdf");
     }
+    
 }
