@@ -126,8 +126,8 @@ public class Controller : MonoBehaviour
     private void EndQuiz()
     {
         PlayerPrefs.SetInt("latestage", age);
-        PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("highscore") < age ? age : PlayerPrefs.GetInt("highscore"));
-        PlayerPrefs.SetString("questionsscore", wq == null ? "You have answered everything correctly!" : wq.ToString());
+        PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("highscore") < age ? age : PlayerPrefs.GetInt("highscore"));       
+        PlayerPrefs.SetString("questionsscore", wq == null ? "Gefeliciteerd, u heeft alles goed beantwoordt!" : wq.ToString());
         CallSaveData();
         Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene("FinalScoreScene");
