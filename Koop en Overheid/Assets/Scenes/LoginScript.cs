@@ -27,9 +27,12 @@ public class LoginScript : MonoBehaviour
         yield return www;
         if (www.text[0] == '0')
         {
+            Debug.Log(www.text);
             PlayerPrefs.SetInt("isLoggedIn", 1);
             PlayerPrefs.SetString("username", usernameField.text);
             PlayerPrefs.SetInt("highscore", int.Parse(www.text.Split('\t')[1]));
+            PlayerPrefs.SetString("privacyvoorwaarden", www.text.Split('\t')[2]);
+            PlayerPrefs.SetString("zwartetext", www.text.Split('\t')[3]);
             UnityEngine.SceneManagement.SceneManager.LoadScene("Main Scene");
         }
         else

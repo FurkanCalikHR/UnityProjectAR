@@ -3586,7 +3586,7 @@ MonoBehaviour:
   passwordField: {fileID: 1428773990}
   governmentField: {fileID: 860801733}
   registerButton: {fileID: 1229546943}
-  termsAndConditions: {fileID: 1915919779}
+  privacyconditions: {fileID: 1915919779}
   errorDisplay: {fileID: 1456876156}
   usernameErrorLog: {fileID: 2140216459}
   passwordErrorLog: {fileID: 686758098}

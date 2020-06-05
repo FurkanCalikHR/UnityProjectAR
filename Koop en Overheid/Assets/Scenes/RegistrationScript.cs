@@ -10,7 +10,7 @@ public class RegistrationScript : MonoBehaviour
 
     public Button registerButton;
 
-    public Toggle termsAndConditions;
+    public Toggle privacyconditions;
 
     public TextMeshProUGUI errorDisplay, usernameErrorLog, passwordErrorLog, governmentErrorLog;
 
@@ -25,7 +25,7 @@ public class RegistrationScript : MonoBehaviour
         form.AddField("username", usernameField.text);
         form.AddField("password", passwordField.text);
         form.AddField("government", governmentField.text);
-        form.AddField("termsandconditions", termsAndConditions.isOn.ToString());
+        form.AddField("privacyconditions", privacyconditions.isOn ? "True" : "False");
         WWW www = new WWW("https://koopoverheid.000webhostapp.com/register.php", form);
         yield return www;
         if(www.text == "0")
