@@ -8,7 +8,7 @@ public class HighscoreTable : MonoBehaviour
     private Transform entryContainer;
     private Transform entryTemplate;
 
-    private void Awake(){
+    private void Awake() {
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
@@ -17,7 +17,7 @@ public class HighscoreTable : MonoBehaviour
         float templateHeight = 80f;
         int[] score = {100,88,73,55,47,39,26,22,14,8};
         string[] name = {"KOOP", "RDW", "Gemeente Rotterdam", "Mark Rutte", "Willie", "Belastingdienst", "CJIB", "CBR", "DUO", "Gemeente Amsterdam"};
-        for (int i = 0; i <10; i++){
+        for (int i = 0; i < 10; i++){
             Transform entryTransform = Instantiate(entryTemplate, entryContainer);
             RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
             entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * i);
