@@ -65,7 +65,6 @@ public class Controller : MonoBehaviour
                 UpdateQuestionScore(currentQuestion);
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
                 ApplyColor(button, Color.red);
-                WrongQuestions(currentQuestion.question, currentQuestion.answer, "A: "+currentQuestion.answerOptions[0] +"\n" +"B: "+currentQuestion.answerOptions[1]+"\n"+"C: "+currentQuestion.answerOptions[2]+"\n"+"D: "+currentQuestion.answerOptions[3]);
             }
             UpdateProgressBar();
             NextQuestion();
