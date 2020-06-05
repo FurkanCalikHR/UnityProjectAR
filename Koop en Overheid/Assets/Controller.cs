@@ -35,6 +35,7 @@ public class Controller : MonoBehaviour
         characters.ForEach(chars => chars.SetActive(false));
         characters[0].SetActive(true);
         currentQuestion = questions[0];
+        questionAnswerDisplay.color = PlayerPrefs.GetString("zwartetext").Equals("True") ? Color.black : Color.white;
         if(currentQuestion != null)
         {
             BuildDisplayText();
