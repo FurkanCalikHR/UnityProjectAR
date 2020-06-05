@@ -1732,7 +1732,7 @@ MonoBehaviour:
     - Wet overheid en besluitvorming
     - Wet overheid en bediening
   - points: 1
-    question: Wat is het doel van de WOB
+    question: Wat is het doel van de WOB?
     answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
     - Het kunnen weigeren van overheidsdocumenten
@@ -1792,6 +1792,7 @@ MonoBehaviour:
   questionAnswerDisplay: {fileID: 1419820302}
   scoreDisplay: {fileID: 2139635320}
   slider: {fileID: 1664705766}
+  textDisplay: {fileID: 0}
 --- !u!4 &699604475
 Transform:
   m_ObjectHideFlags: 0
