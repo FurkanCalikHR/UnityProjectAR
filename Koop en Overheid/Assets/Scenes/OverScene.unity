@@ -359,33 +359,51 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Jij bent opzoek naar wat meer informatie over KOOP en de ontwikkeling van
-    deze applicatie. Laten we beginnen.
-
-
-    KOOP
-
-
-    - Wie is KOOP
-
-    - Wat doet KOOP
-
-    - De nood voor deze app
-
-    - Samenkomst KOOP, DisGover & Hogeschool
-
-
-    Developers
-
-
-    - Team Hogeschool
-
-    - Doel Ontwikkeling
-
-    - ...
-
-
-'
+  m_Text: "Jij bent opzoek naar wat meer informatie over KOOP en de ontwikkeling van
+    deze applicatie. Laten we beginnen.\n\nKOOP\n\nKennis- en Exploitatiecentrum Officiele
+    Overheidspublicaties. Oftewel KOOP. De hoofdtaak van KOOP is het rechtsgeldig
+    bekendmaken en beschikbaar stellen van wet- en regelgeving van alle overheden
+    van Nederland. Zo zijn zij het brein achter alle bekendmakingen van informatie
+    dat wordt opgevraagd door een WOB- of WHO-verzoek. Zoals je wel is leest in de
+    krant. Maar dat is niet het enige wat achter de schermen van KOOP speelt. \n\nKOOP
+    is ook verantwoordelijk voor het digitaliseren van alle overheids data. Daarvoor
+    ontwikkeld KOOP standaarden over hoe data te digitaliseren.  Daardoor is overheidsinformatie
+    vindbaar. Vervolgens werkt KOOP aan een transparante overheid door overheids data
+    beschikbaar te maken als open- en linked data. Met het openstellen en linken van
+    data kan overheidsinformatie in samenhang met andere informatie gepresenteerd
+    worden en verbanden worden getrokken tussen verschillende data. \n\nBen je opzoek
+    naar de informatie die KOOP beschikbaar stelt, kan je een van de mediums raadplegen
+    die KOOP onderhoudt. Een van de bekendste is www.overheid.nl, maar er zijn ook
+    mobiele apps die overheidsinformatie voor iedereen binnen handbereik maken. \n\nWil
+    je meer weten van KOOP? Bekijk dan even hun website: www.koopoverheid.nl.\n\n\nGovernlution\n\nZo
+    doet KOOP geweldig werk door alles te digitaliseren en beschikbaar te stellen.
+    Maar dit kunnen zij niet alleen. Het volledig en juist maken van de informatie
+    moet gedaan worden door de instantie waar de informatie vandaan komt. Daarom zijn
+    er door KOOP standaarden ontwikkeld over hoe de data klaargestoomd moet worden
+    om het proces overzichtelijk en gestroomlijnd te houden. \n\nAlleen zijn vele
+    overheidsinstanties nog niet zo ver met hun data en moeten zij nog klaargestoomd
+    worden. Daarom is er door de overheid een handreiking opgesteld. Die handreiking
+    bevat 8 stappen die beschrijven hoe je de data kan gaan digitaliseren en waar
+    rekening mee gehouden moet worden. \n\nMaar het probleem waar vele tegenaan lopen
+    is dat dit document groot is en veel grijze stof bevat. Daarom is de taak vrij
+    moeizaam. Hier was vernieuwing voor nodig. KOOP is gaan brainstormen en is toen
+    met het idee gekomen om de 8 stappen van de handreiking te verwerken in een digitale
+    thermometer. Die thermometer staat dan symbool voor de voortgang van iedere instantie
+    zijn data digitalisering. Maar de ontwikkeling was niet aan hun besteed dus gingen
+    ze opzoek naar een geschikte kandidaat om dit te doen.\n\nDisGover\n\nDiscover
+    & Government maakt samen DisGover. Nieuwe ideeen ontdekt en ontwikkeld voor de
+    overheid. DisGover gaat opzoek naar jonge potentiele kandidaten die gedreven zijn
+    om de bedachte ideeen vorm te geven. Zo is DisGover samen gaan werken met de Hogeschool
+    Rotterdam. Uit deze samenwerking zijn een twee dozijn studenten uitgenodigd om
+    verschillende casussen op te pakken. Een van die casussen was de thermometer van
+    KOOP.\n\nOp dat moment is de link gelegd tussen de bedenker, KOOP, en vormgever,
+    studenten Hogeschool Rotterdam. Medemogelijk gemaakt door DisGover.\n\n\nTeam
+    Hogeschool Rotterdam\n\nNa de kennismaking tussen KOOP en de studenten is de casus
+    gepitcht en zijn de studenten begonnen met onderzoek en experimenteren. Uit dit
+    onderzoek en experimenteren is deze Proof of Concept naar voren gekomen. Een Applicatie
+    voor telefoon & tablet die de kennis en stand van zaken van een overheidsinstantie
+    over data digitaliseren toetst met het gebruik van Augmented Reality. Een 6 maanden
+    durende samenwerking tussen KOOP, DisGover & Hogeschool Rotterdam.\n\n\n"
 --- !u!222 &1153722635
 CanvasRenderer:
   m_ObjectHideFlags: 0
