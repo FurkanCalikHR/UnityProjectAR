@@ -11,22 +11,31 @@ public class Controller : MonoBehaviour
 
     [SerializeField]
     private List<Question> questions;
+
     private Question currentQuestion;
 
     public List<GameObject> characters;
 
-    private int currentIndex = 0, score = 0, currentCharacterIndex = 0;
+    private int currentIndex = 0, age = 0, currentCharacterIndex = 0;
 
     public List<Button> options;
 
     public TextMeshProUGUI questionAnswerDisplay, scoreDisplay;
 
+    public Slider slider;
+
+    public Text correctIncorrectTextDisplay;
+
+    private string wq;
+
 
     void Start()
     {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         characters.ForEach(chars => chars.SetActive(false));
         characters[0].SetActive(true);
         currentQuestion = questions[0];
+        questionAnswerDisplay.color = PlayerPrefs.GetString("zwartetext").Equals("True") ? Color.black : Color.white;
         if(currentQuestion != null)
         {
             BuildDisplayText();
@@ -45,18 +54,20 @@ public class Controller : MonoBehaviour
     {
         if(currentQuestion != null)
         {
-            options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
             if (currentQuestion.answer.Equals(answer))
             {
-                AddScore(currentQuestion.points);
+                AddAge(currentQuestion.points);
                 CharacterSwap();
                 characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
-                ApplyColor(button, Color.green);
-            } else
-            {
-                characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
-                ApplyColor(button, Color.red);
+                DisplayAnswer(true);
             }
+            else
+            {
+                UpdateQuestionScore(currentQuestion);
+                characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
+                DisplayAnswer(false);
+            }
+            UpdateProgressBar();
             NextQuestion();
         }
     }
@@ -70,7 +81,6 @@ public class Controller : MonoBehaviour
             if (nextQuestion != null)
             {
                 currentQuestion = nextQuestion;
-                options.ForEach(baseButton => ApplyColor(baseButton, Color.white));
                 BuildDisplayText();
             }
         }
@@ -84,23 +94,25 @@ public class Controller : MonoBehaviour
     {
         if(currentCharacterIndex < characters.Count)
         {
-            if (score >= 0 && score <= 10)
+            if (age >= 0 && age <= 1)
             {
                 SetCharacterActive(0);
             }
-            else if(score >= 11 && score <= 25)
+            else if(age >= 2 && age <= 4)
             {
                 SetCharacterActive(1);
             }
-            else if (score >= 26 && score <= 75)
+            else if (age >= 5)
             {
                 SetCharacterActive(2);
             }
-            else if (score >= 76 && score <= 100)
-            {
-                SetCharacterActive(3);
-            }
         }
+    }
+
+    private void UpdateProgressBar()
+    {
+        float val = ((float) questions.Count) / ((float) (currentIndex + 1));
+        slider.value = (float) (1.0f / val);
     }
 
     private void SetCharacterActive(int index)
@@ -112,13 +124,27 @@ public class Controller : MonoBehaviour
 
     private void EndQuiz()
     {
-        PlayerPrefs.SetInt("latestscore", score);
-        if(PlayerPrefs.GetInt("highscore") < score)
-        {
-            PlayerPrefs.SetInt("highscore", score);
-        }
+        PlayerPrefs.SetInt("latestage", age);
+        PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("highscore") < age ? age : PlayerPrefs.GetInt("highscore"));       
+        PlayerPrefs.SetString("questionsscore", wq == null ? "Gefeliciteerd, u heeft alles goed beantwoordt!" : wq.ToString());
+        CallSaveData();
         Screen.orientation = ScreenOrientation.Portrait;
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene("FinalScoreScene");
+
+    }
+
+    public void CallSaveData()
+    {
+        StartCoroutine(SaveUserData());
+    }
+
+    IEnumerator SaveUserData()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", PlayerPrefs.GetString("username"));
+        form.AddField("score", PlayerPrefs.GetInt("highscore"));
+        WWW www = new WWW("https://koopoverheid.000webhostapp.com/updatescore.php", form);
+        yield return www;
     }
 
     private void BuildDisplayText()
@@ -133,22 +159,32 @@ public class Controller : MonoBehaviour
         questionAnswerDisplay.text = builder.ToString();
     }
 
-    private void ApplyColor(Button button, Color color)
+    private void AddAge(int ageToAdd)
     {
-        var colors = button.colors;
-        colors.disabledColor = color;
-        colors.highlightedColor = color;
-        colors.selectedColor = color;
-        colors.normalColor = color;
-        button.colors = colors;
+        age += ageToAdd;
+        scoreDisplay.text = "Leeftijd: " + age;
     }
 
-    private void AddScore(int scoreToAdd)
+    public void UpdateQuestionScore(Question currentQuestion)
     {
-        score += scoreToAdd;
-        scoreDisplay.text = "Points: " + score;
+        wq = wq + currentQuestion.question + "\n\n" + "A: " + currentQuestion.answerOptions[0] + "\n" + 
+            "B: " + currentQuestion.answerOptions[1] + "\n" + "C: " + currentQuestion.answerOptions[2] + "\n" +
+            "D: " + currentQuestion.answerOptions[3] + "\n\n" + "Antwoord = " + currentQuestion.answer + "\n\n";
     }
 
+    public void DisplayAnswer(bool correct)
+    {
+        StartCoroutine(ShowMessage(correct, 2));
+    }
+
+    IEnumerator ShowMessage(bool correct, float delay)
+    {
+        correctIncorrectTextDisplay.text = correct ? "Goed Gedaan! +1" : "Fout!";
+        correctIncorrectTextDisplay.enabled = true;
+        correctIncorrectTextDisplay.color = correct ? Color.green : Color.red;
+        yield return new WaitForSeconds(delay);
+        correctIncorrectTextDisplay.enabled = false;
+    }
 }
 
 [System.Serializable]

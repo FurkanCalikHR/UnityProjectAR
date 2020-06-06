@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class FinalScoreScript : MonoBehaviour
 {
-    public Text latestScoreDisplayText, highScoreDisplayText;
+    public Text latestScoreDisplayText, highScoreDisplayText, AllQuestions;
 
     void Start()
     {
-        latestScoreDisplayText.text = "Latest Score: " + PlayerPrefs.GetInt("latestscore");
+        latestScoreDisplayText.text = "Leeftijd Bereikt: " + PlayerPrefs.GetInt("latestage");
         highScoreDisplayText.text = "High Score: " + PlayerPrefs.GetInt("highscore");
+        AllQuestions.text = PlayerPrefs.GetString("questionsscore");
     }
 }
