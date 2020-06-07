@@ -30,6 +30,7 @@ public class Controller : MonoBehaviour
     private string wq;
 
 
+
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
