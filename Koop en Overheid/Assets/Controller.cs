@@ -14,7 +14,8 @@ public class Controller : MonoBehaviour
 
     private Question currentQuestion;
 
-    public List<GameObject> characters;
+    [SerializeField]
+    private List<CharacterDisplay> characters;
 
     private int currentIndex = 0, age = 0, currentCharacterIndex = 0;
 
@@ -32,8 +33,8 @@ public class Controller : MonoBehaviour
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-        characters.ForEach(chars => chars.SetActive(false));
-        characters[0].SetActive(true);
+        characters.ForEach(chars => chars.character.SetActive(false));
+        characters[0].character.SetActive(true);
         currentQuestion = questions[0];
         questionAnswerDisplay.color = PlayerPrefs.GetString("zwartetext").Equals("True") ? Color.black : Color.white;
         if(currentQuestion != null)
@@ -58,13 +59,13 @@ public class Controller : MonoBehaviour
             {
                 AddAge(currentQuestion.points);
                 CharacterSwap();
-                characters[currentCharacterIndex].GetComponent<Animator>().Play("Happy Idle");
+                characters[currentCharacterIndex].character.GetComponent<Animator>().Play("Happy Idle");
                 DisplayAnswer(true);
             }
             else
             {
                 UpdateQuestionScore(currentQuestion);
-                characters[currentCharacterIndex].GetComponent<Animator>().Play("Angry");
+                characters[currentCharacterIndex].character.GetComponent<Animator>().Play("Angry");
                 DisplayAnswer(false);
             }
             UpdateProgressBar();
@@ -94,17 +95,12 @@ public class Controller : MonoBehaviour
     {
         if(currentCharacterIndex < characters.Count)
         {
-            if (age >= 0 && age <= 1)
+            for(int i = 0; i < characters.Count; i++)
             {
-                SetCharacterActive(0);
-            }
-            else if(age >= 2 && age <= 4)
-            {
-                SetCharacterActive(1);
-            }
-            else if (age >= 5)
-            {
-                SetCharacterActive(2);
+                if (age >= characters[i].minAge && age <= characters[i].maxAge)
+                {
+                    SetCharacterActive(i);
+                }
             }
         }
     }
@@ -118,8 +114,8 @@ public class Controller : MonoBehaviour
     private void SetCharacterActive(int index)
     {
         currentCharacterIndex = index;
-        characters.ForEach(chars => chars.SetActive(false));
-        characters[currentCharacterIndex].SetActive(true);
+        characters.ForEach(chars => chars.character.SetActive(false));
+        characters[currentCharacterIndex].character.SetActive(true);
     }
 
     private void EndQuiz()
@@ -193,4 +189,11 @@ public class Question
     public int points;
     public string question, answer;
     public List<string> answerOptions;
+}
+
+[System.Serializable]
+public class CharacterDisplay
+{
+    public int minAge, maxAge;
+    public GameObject character;
 }

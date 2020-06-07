@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class InstellingenScript : MonoBehaviour
 {
     public Toggle privacyVoorwaarden, zwarteText;
+    public TextMeshProUGUI resultLogger;
 
     public void Start()
     {
@@ -49,5 +50,22 @@ public class InstellingenScript : MonoBehaviour
         form.AddField("blacktext", PlayerPrefs.GetString("zwartetext"));
         WWW www = new WWW("https://koopoverheid.000webhostapp.com/updatesettings.php", form);
         yield return www;
+        if(www.text == "0")
+        {
+            StartCoroutine(ShowMessage("Uw instellingen zijn opgeslagen!", Color.green, 2));
+        }
+        else
+        {
+            StartCoroutine(ShowMessage("Er is iets mis gegaan met het opslaan!", Color.red, 2));
+        }
+    }
+
+    IEnumerator ShowMessage(string text, Color color, float delay)
+    {
+        resultLogger.text = text;
+        resultLogger.enabled = true;
+        resultLogger.color = color;
+        yield return new WaitForSeconds(delay);
+        resultLogger.enabled = false;
     }
 }

@@ -1858,9 +1858,15 @@ MonoBehaviour:
     - Alleen bij een WOB-verzoek
     - Alleen bij een WHO-verzoek
   characters:
-  - {fileID: 1244396436}
-  - {fileID: 1415449916}
-  - {fileID: 1035703895}
+  - minAge: 0
+    maxAge: 2
+    character: {fileID: 1244396436}
+  - minAge: 3
+    maxAge: 5
+    character: {fileID: 1415449916}
+  - minAge: 6
+    maxAge: 7
+    character: {fileID: 1035703895}
   options:
   - {fileID: 1344462071}
   - {fileID: 1988033803}
