@@ -982,169 +982,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!43 &596785943
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh38142
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.5}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf00000000000000bf000000000000803f000000000000000000000000000000bf000000000000003f000000000000803f00000000000000000000803f0000003f00000000000000bf000000000000803f000000000000803f000000000000003f000000000000003f000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.5}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &655739598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1308,7 +1145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - points: 1
-    question: Waar staat de afkorting WOB voor?
+    question: 1. Waar staat de afkorting WOB voor?
     answer: Wet openbaarheid van bestuur
     answerOptions:
     - Wet openbaarheid van bestuur
@@ -1316,7 +1153,7 @@ MonoBehaviour:
     - Wet overheid en besluitvorming
     - Wet overheid en bediening
   - points: 1
-    question: Wat is het doel van de WOB?
+    question: 2. Wat is het doel van de WOB?
     answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
     - Het kunnen weigeren van overheidsdocumenten
@@ -1324,7 +1161,7 @@ MonoBehaviour:
     - Besluitvorming van de overheid transparanter maken
     - Overheidsinstanties beschermen
   - points: 1
-    question: Wat kan er worden opgevraagd met een WOB-verzoek?
+    question: 3. Wat kan er worden opgevraagd met een WOB-verzoek?
     answer: A, B en C
     answerOptions:
     - "Offici\xEBle overheidsdocumenten"
@@ -1332,7 +1169,7 @@ MonoBehaviour:
     - WhatsApp berichten tussen ambtenaren
     - A, B en C
   - points: 1
-    question: Hoelang mag de overheid doen over een WOB-verzoek?
+    question: 4. Hoelang mag de overheid doen over een WOB-verzoek?
     answer: Twee maanden
     answerOptions:
     - Vier weken
@@ -1340,7 +1177,7 @@ MonoBehaviour:
     - Twee maanden
     - Zo lang als nodig
   - points: 1
-    question: Wat is het verschil tussen een WOB- en WHO-verzoek?
+    question: 5. Wat is het verschil tussen een WOB- en WHO-verzoek?
     answer: De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
     answerOptions:
     - De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
@@ -1348,7 +1185,7 @@ MonoBehaviour:
     - De informatie van een WHO-verzoek kan alleen gebruikt worden tussen overheidsinstanties
     - De verzoeken hebben geen verschil
   - points: 1
-    question: Een WOB- of WHO-verzoek kan geweigerd worden als het...
+    question: 6. Een WOB- of WHO-verzoek kan geweigerd worden als het...
     answer: A, B en C
     answerOptions:
     - De veiligheid van de staat zou kunnen schaden
@@ -1356,14 +1193,169 @@ MonoBehaviour:
     - Inbreuk maakt op de persoonlijke levenssfeer
     - A, B en C
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
+    question: 7. Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft
+      dat de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter
+      stappen?
     answer: Waar
     answerOptions:
     - Waar
     - Niet Waar
     - Alleen bij een WOB-verzoek
     - Alleen bij een WHO-verzoek
+  - points: 1
+    question: 8. De Algemene Verordening Gegevensbescherming (AVG) staat voor?
+    answer: Bescherming van persoonsgegevens
+    answerOptions:
+    - Bescherming van de Staat
+    - Bescherming van persoonsgegevens
+    - Bescherming van bepaalde natuurplekken
+    - Bescherming van openbare gegevens
+  - points: 1
+    question: 9. Ben ik bekend met de uitgangspunten voor het beschikbaar stellen
+      van open data?
+    answer: Ja
+    answerOptions:
+    - Ja
+    - Nee
+  - points: 1
+    question: 10. Bij het beschikbaar stellen van open data, kijk ik naar?
+    answer: Eerder gestelde verzoeken, toepassingen en high value datalijsten
+    answerOptions:
+    - Wat mij het minste koste als organisatie
+    - Waar ik de meeste kennis over heb
+    - Eerder gestelde verzoeken, toepassingen en high value datalijsten
+    - Waar ik zin in heb
+  - points: 1
+    question: 11. Het gebruik van (open) standaarden bij publicatie van datasets is
+    answer: Nadrukkelijk aanbevolen
+    answerOptions:
+    - Verplicht
+    - Niet Verplicht
+    - Nadrukkelijk aanbevolen
+    - Niet van toepassing
+  - points: 1
+    question: '12. De standaard voor het uitwisselen van metadata van datasets is:'
+    answer: DCAT
+    answerOptions:
+    - DCAT
+    - Digikoppeling
+    - HTTPS
+    - ODF
+  - points: 1
+    question: 13. Welk dataformaat is een herbruikbaar formaat?
+    answer: CSV
+    answerOptions:
+    - Word
+    - PDF
+    - PNG
+    - CSV
+  - points: 1
+    question: 14. Wat is een high value dataset?
+    answer: Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft
+      voor hergebruikers
+    answerOptions:
+    - Een dataset die groot is om te downloaden
+    - Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft voor
+      hergebruikers
+    - Een dataset die weinig wordt gebruikt door hergebruikers
+    - Een dataset die intern in de organisatie veel wordt gebruikt
+  - points: 1
+    question: 15. Wat is een referentiedataset?
+    answer: Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein
+      en bestaat uit waarden en/of statussen
+    answerOptions:
+    - Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein en
+      bestaat uit waarden en/of statussen
+    - Een dataset die veel verwijzingen kent
+    - Een dataset die weinig wordt gebruikt door hergebruikers
+    - Een dataset die alleen jouw organisatie gebruikt
+  - points: 1
+    question: "16. De hoofdregel in Nederland is dat informatie openbaar is, tenzij\u2026.
+      Maar waar vind ik de uitzonderingsgronden om iets niet te openbaren?"
+    answer: Art. 10 van de WOB
+    answerOptions:
+    - Art. 10 van de WOB
+    - Art. 24 van de WOB
+    - Art. 13 van de WHO
+    - Art. 8 van de WHO
+  - points: 1
+    question: 17. De rechten van derden bij een dataset moeten altijd worden gecheckt?
+    answer: Ja
+    answerOptions:
+    - Af en toe
+    - Nee
+    - Ja
+    - Ligt aan de vraagsteller
+  - points: 1
+    question: 18. Welke zorgplichten heeft de overheid om verwachtingen aan gebruikers
+      te adresseren?
+    answer: Een basislaag van meta-informatie en disclaimers/proclaimers
+    answerOptions:
+    - Een basislaag van meta-informatie en navraag waarom data wordt hergebruikt
+    - Disclaimers/proclaimers en navraag waarom data wordt hergebruikt
+    - Navraag waarom data wordt hergebruikt en registratieplicht
+    - Een basislaag van meta-informatie en disclaimers/proclaimers
+  - points: 1
+    question: 19. Best practices zijn er om te leren van andere overheidsorganisaties.  Welke
+      overheidsorganisatie kan mij helpen met statistieken?
+    answer: Centraal Bureau voor de Statistiek
+    answerOptions:
+    - Centraal PLanbureau
+    - Centraal Bureau voor de Statistiek
+    - Ministerie van Economische Zaken en Klimaat
+    - Centraal Justitieel Incassobureau
+  - points: 1
+    question: 20. Welke overheidsorganisatie kan mij helpen met o.a. ontsluiting van
+      geo-data?
+    answer: Kadaster
+    answerOptions:
+    - Inspectie Leefomgeving en Transport
+    - Ministerie van Infrastructuur en Waterstaat
+    - Kadaster
+    - Nederlandse Emissieautoriteit
+  - points: 1
+    question: 21. Waar vind ik alle data van de Nederlandse overheid?
+    answer: Data.overheid.nl
+    answerOptions:
+    - CBS Statline
+    - Nationaal Georegister
+    - Rijksoverheid.nl
+    - Data.overheid.nl
+  - points: 1
+    question: '22. Om datasets in mijn organisatie in kaart te brengen, maak ik gebruik
+      van:'
+    answer: Data-inventarisatie in mijn organisatie
+    answerOptions:
+    - Peiling van data in mijn organisatie
+    - Data-inventarisatie in mijn organisatie
+    - Ik ga gewoon beginnen
+  - points: 1
+    question: 23. Hoe maak ik mijn data duurzaam?
+    answer: "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
+    answerOptions:
+    - Wisselen van datasets en een beetje metadata
+    - "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
+    - Dataset eenmalig uploaden en zo volledig mogelijk metadateren
+    - "Geen datamanagement en continu\xEFteit"
+  - points: 1
+    question: 24. De infrastructuur die je kiest om data te publiceren is van belang.
+      In Europa wordt veelal gebruikt gemaakt van een open source product. Welk product
+      is dit?
+    answer: CKAN
+    answerOptions:
+    - CKAN
+    - DCAT
+    - API
+    - RDF
+  - points: 1
+    question: '25. Het is van belang om de impact van je data te gaan kennen. Er zijn
+      vier soorten impact:'
+    answer: Economisch, sociaal, omgeving en politiek
+    answerOptions:
+    - "Economisch, sociaal, omgeving en financi\xEBn"
+    - "Sociaal, omgeving, financi\xEBn en politiek"
+    - "Economisch, omgeving, financi\xEBn en politiek"
+    - Economisch, sociaal, omgeving en politiek
   characters:
   - minAge: 0
     maxAge: 2
@@ -2706,6 +2698,169 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9f2533e93fb9145bdb4df31870328f, type: 3}
+--- !u!43 &1327459255
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ImageTargetMesh15822
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf00000000000000bf000000000000803f000000000000000000000000000000bf000000000000003f000000000000803f00000000000000000000803f0000003f00000000000000bf000000000000803f000000000000803f000000000000003f000000000000003f000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1344462069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,7 +4029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -0.00000095367}
+  m_AnchoredPosition: {x: -30, y: 0}
   m_SizeDelta: {x: 90.5, y: 20.4}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1983285487
@@ -3998,7 +4153,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987624186}
-  m_Mesh: {fileID: 596785943}
+  m_Mesh: {fileID: 1327459255}
 --- !u!23 &1987624188
 MeshRenderer:
   m_ObjectHideFlags: 0

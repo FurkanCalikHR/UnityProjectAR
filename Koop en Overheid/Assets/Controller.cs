@@ -148,7 +148,7 @@ public class Controller : MonoBehaviour
     {
         string[] optionsTags = {"A", "B", "C", "D"};
         StringBuilder builder = new StringBuilder();
-        builder.Append((currentIndex + 1) + ". " + currentQuestion.question + "\n");
+        builder.Append(currentQuestion.question + "\n");
         for(int i = 0; i < currentQuestion.answerOptions.Count; i++)
         {
             builder.Append(optionsTags[i] + ") " + currentQuestion.answerOptions[i] + "\n");
