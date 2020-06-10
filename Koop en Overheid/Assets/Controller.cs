@@ -27,7 +27,7 @@ public class Controller : MonoBehaviour
 
     public Text correctIncorrectTextDisplay;
 
-    private string wq;
+    private StringBuilder wq = new StringBuilder();
 
 
 
@@ -40,6 +40,7 @@ public class Controller : MonoBehaviour
         questionAnswerDisplay.color = PlayerPrefs.GetString("zwartetext").Equals("True") ? Color.black : Color.white;
         if(currentQuestion != null)
         {
+            ShowOptions();
             BuildDisplayText();
         }
     }
@@ -83,6 +84,7 @@ public class Controller : MonoBehaviour
             if (nextQuestion != null)
             {
                 currentQuestion = nextQuestion;
+                ShowOptions();
                 BuildDisplayText();
             }
         }
@@ -105,18 +107,29 @@ public class Controller : MonoBehaviour
             }
         }
     }
-
-    private void UpdateProgressBar()
-    {
-        float val = ((float) questions.Count) / ((float) (currentIndex + 1));
-        slider.value = (float) (1.0f / val);
-    }
-
     private void SetCharacterActive(int index)
     {
         currentCharacterIndex = index;
         characters.ForEach(chars => chars.character.SetActive(false));
         characters[currentCharacterIndex].character.SetActive(true);
+    }
+
+    private void ShowOptions()
+    {
+        if(currentQuestion != null)
+        {
+            options.ForEach(option => option.gameObject.SetActive(false));
+            for(int i = 0; i < currentQuestion.answerOptions.Count; i++)
+            {
+                options[i].gameObject.SetActive(true);
+            }
+        }
+    }
+
+    private void UpdateProgressBar()
+    {
+        float val = ((float) questions.Count) / ((float) (currentIndex + 1));
+        slider.value = (float) (1.0f / val);
     }
 
     private void EndQuiz()
@@ -164,9 +177,8 @@ public class Controller : MonoBehaviour
 
     public void UpdateQuestionScore(Question currentQuestion)
     {
-        wq = wq + currentQuestion.question + "\n\n" + "A: " + currentQuestion.answerOptions[0] + "\n" + 
-            "B: " + currentQuestion.answerOptions[1] + "\n" + "C: " + currentQuestion.answerOptions[2] + "\n" +
-            "D: " + currentQuestion.answerOptions[3] + "\n\n" + "Antwoord = " + currentQuestion.answer + "\n\n";
+        wq.Append(currentQuestion.question + "\n");
+        wq.Append("Antwoord = " + currentQuestion.answer + "\n\n");
     }
 
     public void DisplayAnswer(bool correct)
