@@ -1250,59 +1250,60 @@ MonoBehaviour:
     - PNG
     - CSV
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 14.Wat is een high value dataset?
+    answer: Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft
+      voor hergebruikers
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Een dataset die groot is om te downloaden
+    - Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft voor
+      hergebruikers
+    - Een dataset die weinig wordt gebruikt door hergebruikers
+    - Een dataset die intern in de organisatie veel wordt gebruikt
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 15.Wat is een referentiedataset?
+    answer: Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein
+      en bestaat uit waarden en/of statussen
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein en
+      bestaat uit waarden en/of statussen
+    - Een dataset die veel verwijzingen kent
+    - Een dataset die weinig wordt gebruikt door hergebruikers
+    - Een dataset die alleen jouw organisatie gebruikt
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: "16.De hoofdregel in Nederland is dat informatie openbaar is, tenzij\u2026.
+      Maar waar vind ik de uitzonderingsgronden om iets niet te openbaren?"
+    answer: Art. 10 van de WOB
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Art. 10 van de WOB
+    - Art. 24 van de WOB
+    - Art. 13 van de WHO
+    - Art. 8 van de WHO
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 17.De rechten van derden bij een dataset moeten altijd worden gecheckt?
+    answer: Ja
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Af en toe
+    - Nee
+    - Ja
+    - Ligt aan de vraagsteller
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 18.Welke zorgplichten heeft de overheid om verwachtingen aan gebruikers
+      te adresseren?
+    answer: Een basislaag van meta-informatie en disclaimers/proclaimers
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Een basislaag van meta-informatie en navraag waarom data wordt hergebruikt
+    - Disclaimers/proclaimers en navraag waarom data wordt hergebruikt
+    - Navraag waarom data wordt hergebruikt en registratieplicht
+    - Een basislaag van meta-informatie en disclaimers/proclaimers
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 19.Best practices zijn er om te leren van andere overheidsorganisaties.  Welke
+      overheidsorganisatie kan mij helpen met statistieken?
+    answer: Centraal Bureau voor de Statistiek
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Centraal PLanbureau
+    - Centraal Bureau voor de Statistiek
+    - Ministerie van Economische Zaken en Klimaat
+    - Centraal Justitieel Incassobureau
   - points: 1
     question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
       de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
