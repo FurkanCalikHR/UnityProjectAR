@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - points: 1
-    question: 1.Waar staat de afkorting WOB voor?
+    question: 1. Waar staat de afkorting WOB voor?
     answer: Wet openbaarheid van bestuur
     answerOptions:
     - Wet openbaarheid van bestuur
@@ -1153,7 +1153,7 @@ MonoBehaviour:
     - Wet overheid en besluitvorming
     - Wet overheid en bediening
   - points: 1
-    question: 2.Wat is het doel van de WOB?
+    question: 2. Wat is het doel van de WOB?
     answer: Besluitvorming van de overheid transparanter maken
     answerOptions:
     - Het kunnen weigeren van overheidsdocumenten
@@ -1161,7 +1161,7 @@ MonoBehaviour:
     - Besluitvorming van de overheid transparanter maken
     - Overheidsinstanties beschermen
   - points: 1
-    question: 3.Wat kan er worden opgevraagd met een WOB-verzoek?
+    question: 3. Wat kan er worden opgevraagd met een WOB-verzoek?
     answer: A, B en C
     answerOptions:
     - "Offici\xEBle overheidsdocumenten"
@@ -1169,7 +1169,7 @@ MonoBehaviour:
     - WhatsApp berichten tussen ambtenaren
     - A, B en C
   - points: 1
-    question: 4.Hoelang mag de overheid doen over een WOB-verzoek?
+    question: 4. Hoelang mag de overheid doen over een WOB-verzoek?
     answer: Twee maanden
     answerOptions:
     - Vier weken
@@ -1177,7 +1177,7 @@ MonoBehaviour:
     - Twee maanden
     - Zo lang als nodig
   - points: 1
-    question: 5.Wat is het verschil tussen een WOB- en WHO-verzoek?
+    question: 5. Wat is het verschil tussen een WOB- en WHO-verzoek?
     answer: De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
     answerOptions:
     - De informatie met een WHO-verzoek mag hergebruikt worden voor andere doeleinden
@@ -1185,7 +1185,7 @@ MonoBehaviour:
     - De informatie van een WHO-verzoek kan alleen gebruikt worden tussen overheidsinstanties
     - De verzoeken hebben geen verschil
   - points: 1
-    question: 6.Een WOB- of WHO-verzoek kan geweigerd worden als het...
+    question: 6. Een WOB- of WHO-verzoek kan geweigerd worden als het...
     answer: A, B en C
     answerOptions:
     - De veiligheid van de staat zou kunnen schaden
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     - Inbreuk maakt op de persoonlijke levenssfeer
     - A, B en C
   - points: 1
-    question: 7.Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft
+    question: 7. Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft
       dat de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter
       stappen?
     answer: Waar
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     - Alleen bij een WOB-verzoek
     - Alleen bij een WHO-verzoek
   - points: 1
-    question: 8.De Algemene Verordening Gegevensbescherming (AVG) staat voor?
+    question: 8. De Algemene Verordening Gegevensbescherming (AVG) staat voor?
     answer: Bescherming van persoonsgegevens
     answerOptions:
     - Bescherming van de Staat
@@ -1211,14 +1211,14 @@ MonoBehaviour:
     - Bescherming van bepaalde natuurplekken
     - Bescherming van openbare gegevens
   - points: 1
-    question: 9.Ben ik bekend met de uitgangspunten voor het beschikbaar stellen van
-      open data?
+    question: 9. Ben ik bekend met de uitgangspunten voor het beschikbaar stellen
+      van open data?
     answer: Ja
     answerOptions:
     - Ja
     - Nee
   - points: 1
-    question: 10.Bij het beschikbaar stellen van open data, kijk ik naar?
+    question: 10. Bij het beschikbaar stellen van open data, kijk ik naar?
     answer: Eerder gestelde verzoeken, toepassingen en high value datalijsten
     answerOptions:
     - Wat mij het minste koste als organisatie
@@ -1226,7 +1226,7 @@ MonoBehaviour:
     - Eerder gestelde verzoeken, toepassingen en high value datalijsten
     - Waar ik zin in heb
   - points: 1
-    question: 11.Het gebruik van (open) standaarden bij publicatie van datasets is
+    question: 11. Het gebruik van (open) standaarden bij publicatie van datasets is
     answer: Nadrukkelijk aanbevolen
     answerOptions:
     - Verplicht
@@ -1234,7 +1234,7 @@ MonoBehaviour:
     - Nadrukkelijk aanbevolen
     - Niet van toepassing
   - points: 1
-    question: '12.De standaard voor het uitwisselen van metadata van datasets is:'
+    question: '12. De standaard voor het uitwisselen van metadata van datasets is:'
     answer: DCAT
     answerOptions:
     - DCAT
@@ -1242,7 +1242,7 @@ MonoBehaviour:
     - HTTPS
     - ODF
   - points: 1
-    question: 13.Welk dataformaat is een herbruikbaar formaat?
+    question: 13. Welk dataformaat is een herbruikbaar formaat?
     answer: CSV
     answerOptions:
     - Word
@@ -1250,7 +1250,7 @@ MonoBehaviour:
     - PNG
     - CSV
   - points: 1
-    question: 14.Wat is een high value dataset?
+    question: 14. Wat is een high value dataset?
     answer: Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft
       voor hergebruikers
     answerOptions:
@@ -1260,7 +1260,7 @@ MonoBehaviour:
     - Een dataset die weinig wordt gebruikt door hergebruikers
     - Een dataset die intern in de organisatie veel wordt gebruikt
   - points: 1
-    question: 15.Wat is een referentiedataset?
+    question: 15. Wat is een referentiedataset?
     answer: Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein
       en bestaat uit waarden en/of statussen
     answerOptions:
@@ -1270,7 +1270,7 @@ MonoBehaviour:
     - Een dataset die weinig wordt gebruikt door hergebruikers
     - Een dataset die alleen jouw organisatie gebruikt
   - points: 1
-    question: "16.De hoofdregel in Nederland is dat informatie openbaar is, tenzij\u2026.
+    question: "16. De hoofdregel in Nederland is dat informatie openbaar is, tenzij\u2026.
       Maar waar vind ik de uitzonderingsgronden om iets niet te openbaren?"
     answer: Art. 10 van de WOB
     answerOptions:
@@ -1279,7 +1279,7 @@ MonoBehaviour:
     - Art. 13 van de WHO
     - Art. 8 van de WHO
   - points: 1
-    question: 17.De rechten van derden bij een dataset moeten altijd worden gecheckt?
+    question: 17. De rechten van derden bij een dataset moeten altijd worden gecheckt?
     answer: Ja
     answerOptions:
     - Af en toe
@@ -1287,7 +1287,7 @@ MonoBehaviour:
     - Ja
     - Ligt aan de vraagsteller
   - points: 1
-    question: 18.Welke zorgplichten heeft de overheid om verwachtingen aan gebruikers
+    question: 18. Welke zorgplichten heeft de overheid om verwachtingen aan gebruikers
       te adresseren?
     answer: Een basislaag van meta-informatie en disclaimers/proclaimers
     answerOptions:
@@ -1296,7 +1296,7 @@ MonoBehaviour:
     - Navraag waarom data wordt hergebruikt en registratieplicht
     - Een basislaag van meta-informatie en disclaimers/proclaimers
   - points: 1
-    question: 19.Best practices zijn er om te leren van andere overheidsorganisaties.  Welke
+    question: 19. Best practices zijn er om te leren van andere overheidsorganisaties.  Welke
       overheidsorganisatie kan mij helpen met statistieken?
     answer: Centraal Bureau voor de Statistiek
     answerOptions:
@@ -1305,7 +1305,7 @@ MonoBehaviour:
     - Ministerie van Economische Zaken en Klimaat
     - Centraal Justitieel Incassobureau
   - points: 1
-    question: 20.Welke overheidsorganisatie kan mij helpen met o.a. ontsluiting van
+    question: 20. Welke overheidsorganisatie kan mij helpen met o.a. ontsluiting van
       geo-data?
     answer: Kadaster
     answerOptions:
@@ -1314,7 +1314,7 @@ MonoBehaviour:
     - Kadaster
     - Nederlandse Emissieautoriteit
   - points: 1
-    question: 21.Waar vind ik alle data van de Nederlandse overheid?
+    question: 21. Waar vind ik alle data van de Nederlandse overheid?
     answer: Data.overheid.nl
     answerOptions:
     - CBS Statline
@@ -1322,7 +1322,7 @@ MonoBehaviour:
     - Rijksoverheid.nl
     - Data.overheid.nl
   - points: 1
-    question: '22.Om datasets in mijn organisatie in kaart te brengen, maak ik gebruik
+    question: '22. Om datasets in mijn organisatie in kaart te brengen, maak ik gebruik
       van:'
     answer: Data-inventarisatie in mijn organisatie
     answerOptions:
@@ -1330,7 +1330,7 @@ MonoBehaviour:
     - Data-inventarisatie in mijn organisatie
     - Ik ga gewoon beginnen
   - points: 1
-    question: 23.Hoe maak ik mijn data duurzaam?
+    question: 23. Hoe maak ik mijn data duurzaam?
     answer: "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
     answerOptions:
     - Wisselen van datasets en een beetje metadata
@@ -1338,7 +1338,7 @@ MonoBehaviour:
     - Dataset eenmalig uploaden en zo volledig mogelijk metadateren
     - "Geen datamanagement en continu\xEFteit"
   - points: 1
-    question: 24.De infrastructuur die je kiest om data te publiceren is van belang.
+    question: 24. De infrastructuur die je kiest om data te publiceren is van belang.
       In Europa wordt veelal gebruikt gemaakt van een open source product. Welk product
       is dit?
     answer: CKAN
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     - API
     - RDF
   - points: 1
-    question: '25.Het is van belang om de impact van je data te gaan kennen. Er zijn
+    question: '25. Het is van belang om de impact van je data te gaan kennen. Er zijn
       vier soorten impact:'
     answer: Economisch, sociaal, omgeving en politiek
     answerOptions:
