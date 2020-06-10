@@ -1305,32 +1305,30 @@ MonoBehaviour:
     - Ministerie van Economische Zaken en Klimaat
     - Centraal Justitieel Incassobureau
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 20.Welke overheidsorganisatie kan mij helpen met o.a. ontsluiting van
+      geo-data?
+    answer: Kadaster
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Inspectie Leefomgeving en Transport
+    - Ministerie van Infrastructuur en Waterstaat
+    - Kadaster
+    - Nederlandse Emissieautoriteit
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 21.Waar vind ik alle data van de Nederlandse overheid?
+    answer: Data.overheid.nl
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - CBS Statline
+    - Nationaal Georegister
+    - Rijksoverheid.nl
+    - Data.overheid.nl
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: '22.Om datasets in mijn organisatie in kaart te brengen, maak ik gebruik
+      van:'
+    answer: Data-inventarisatie in mijn organisatie
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Peiling van data in mijn organisatie
+    - Data-inventarisatie in mijn organisatie
+    - Ik ga gewoon beginnen
   - points: 1
     question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
       de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
