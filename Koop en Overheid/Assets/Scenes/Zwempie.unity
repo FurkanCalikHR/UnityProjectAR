@@ -1330,32 +1330,32 @@ MonoBehaviour:
     - Data-inventarisatie in mijn organisatie
     - Ik ga gewoon beginnen
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 23.Hoe maak ik mijn data duurzaam?
+    answer: "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - Wisselen van datasets en een beetje metadata
+    - "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
+    - Dataset eenmalig uploaden en zo volledig mogelijk metadateren
+    - "Geen datamanagement en continu\xEFteit"
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: 24.De infrastructuur die je kiest om data te publiceren is van belang.
+      In Europa wordt veelal gebruikt gemaakt van een open source product. Welk product
+      is dit?
+    answer: CKAN
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - CKAN
+    - DCAT
+    - API
+    - RDF
   - points: 1
-    question: Indien de aanvrager van een WOB of WHO-verzoek het vermoeden heeft dat
-      de overheid informatie achterhoudt, mag de aanvrager dan naar de rechter stappen?
-    answer: Waar
+    question: '25.Het is van belang om de impact van je data te gaan kennen. Er zijn
+      vier soorten impact:'
+    answer: Economisch, sociaal, omgeving en politiek
     answerOptions:
-    - Waar
-    - Niet Waar
-    - Alleen bij een WOB-verzoek
-    - Alleen bij een WHO-verzoek
+    - "Economisch, sociaal, omgeving en financi\xEBn"
+    - "Sociaal, omgeving, financi\xEBn en politiek"
+    - "Economisch, omgeving, financi\xEBn en politiek"
+    - Economisch, sociaal, omgeving en politiek
   characters:
   - minAge: 0
     maxAge: 2
