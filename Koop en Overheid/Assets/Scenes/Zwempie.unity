@@ -1424,14 +1424,14 @@ MonoBehaviour:
     - Bescherming van persoonsgegevens
     - Bescherming van bepaalde natuurplekken
     - Bescherming van openbare gegevens
-  - points: 1
+  - points: 4
     question: 9. Ben ik bekend met de uitgangspunten voor het beschikbaar stellen
       van open data?
     answer: Ja
     answerOptions:
     - Ja
     - Nee
-  - points: 1
+  - points: 4
     question: 10. Bij het beschikbaar stellen van open data, kijk ik naar?
     answer: Eerder gestelde verzoeken, toepassingen en high value datalijsten
     answerOptions:
@@ -1439,7 +1439,7 @@ MonoBehaviour:
     - Waar ik de meeste kennis over heb
     - Eerder gestelde verzoeken, toepassingen en high value datalijsten
     - Waar ik zin in heb
-  - points: 1
+  - points: 4
     question: 11. Het gebruik van (open) standaarden bij publicatie van datasets is
     answer: Nadrukkelijk aanbevolen
     answerOptions:
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     - Niet Verplicht
     - Nadrukkelijk aanbevolen
     - Niet van toepassing
-  - points: 1
+  - points: 5
     question: '12. De standaard voor het uitwisselen van metadata van datasets is:'
     answer: DCAT
     answerOptions:
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     - Digikoppeling
     - HTTPS
     - ODF
-  - points: 1
+  - points: 5
     question: 13. Welk dataformaat is een herbruikbaar formaat?
     answer: CSV
     answerOptions:
@@ -1463,7 +1463,7 @@ MonoBehaviour:
     - PDF
     - PNG
     - CSV
-  - points: 1
+  - points: 5
     question: 14. Wat is een high value dataset?
     answer: Een dataset die een groot potentieel, urgentie en toegevoegde waarde heeft
       voor hergebruikers
@@ -1473,7 +1473,7 @@ MonoBehaviour:
       hergebruikers
     - Een dataset die weinig wordt gebruikt door hergebruikers
     - Een dataset die intern in de organisatie veel wordt gebruikt
-  - points: 1
+  - points: 5
     question: 15. Wat is een referentiedataset?
     answer: Een dataset die uniform is, veel gebruikt als ankerpunt binnen het domein
       en bestaat uit waarden en/of statussen
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     - Een dataset die veel verwijzingen kent
     - Een dataset die weinig wordt gebruikt door hergebruikers
     - Een dataset die alleen jouw organisatie gebruikt
-  - points: 1
+  - points: 4
     question: "16. De hoofdregel in Nederland is dat informatie openbaar is, tenzij\u2026.
       Maar waar vind ik de uitzonderingsgronden om iets niet te openbaren?"
     answer: Art. 10 van de WOB
@@ -1492,7 +1492,7 @@ MonoBehaviour:
     - Art. 24 van de WOB
     - Art. 13 van de WHO
     - Art. 8 van de WHO
-  - points: 1
+  - points: 4
     question: 17. De rechten van derden bij een dataset moeten altijd worden gecheckt?
     answer: Ja
     answerOptions:
@@ -1500,7 +1500,7 @@ MonoBehaviour:
     - Nee
     - Ja
     - Ligt aan de vraagsteller
-  - points: 1
+  - points: 4
     question: 18. Welke zorgplichten heeft de overheid om verwachtingen aan gebruikers
       te adresseren?
     answer: Een basislaag van meta-informatie en disclaimers/proclaimers
@@ -1509,7 +1509,7 @@ MonoBehaviour:
     - Disclaimers/proclaimers en navraag waarom data wordt hergebruikt
     - Navraag waarom data wordt hergebruikt en registratieplicht
     - Een basislaag van meta-informatie en disclaimers/proclaimers
-  - points: 1
+  - points: 3
     question: 19. Best practices zijn er om te leren van andere overheidsorganisaties.  Welke
       overheidsorganisatie kan mij helpen met statistieken?
     answer: Centraal Bureau voor de Statistiek
@@ -1518,7 +1518,7 @@ MonoBehaviour:
     - Centraal Bureau voor de Statistiek
     - Ministerie van Economische Zaken en Klimaat
     - Centraal Justitieel Incassobureau
-  - points: 1
+  - points: 3
     question: 20. Welke overheidsorganisatie kan mij helpen met o.a. ontsluiting van
       geo-data?
     answer: Kadaster
@@ -1527,7 +1527,7 @@ MonoBehaviour:
     - Ministerie van Infrastructuur en Waterstaat
     - Kadaster
     - Nederlandse Emissieautoriteit
-  - points: 1
+  - points: 3
     question: 21. Waar vind ik alle data van de Nederlandse overheid?
     answer: Data.overheid.nl
     answerOptions:
@@ -1535,7 +1535,7 @@ MonoBehaviour:
     - Nationaal Georegister
     - Rijksoverheid.nl
     - Data.overheid.nl
-  - points: 1
+  - points: 3
     question: '22. Om datasets in mijn organisatie in kaart te brengen, maak ik gebruik
       van:'
     answer: Data-inventarisatie in mijn organisatie
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     - Peiling van data in mijn organisatie
     - Data-inventarisatie in mijn organisatie
     - Ik ga gewoon beginnen
-  - points: 1
+  - points: 3
     question: 23. Hoe maak ik mijn data duurzaam?
     answer: "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
     answerOptions:
@@ -1551,7 +1551,7 @@ MonoBehaviour:
     - "Continu\xEFteit van dataset en zo volledig mogelijk metadateren"
     - Dataset eenmalig uploaden en zo volledig mogelijk metadateren
     - "Geen datamanagement en continu\xEFteit"
-  - points: 1
+  - points: 3
     question: 24. De infrastructuur die je kiest om data te publiceren is van belang.
       In Europa wordt veelal gebruikt gemaakt van een open source product. Welk product
       is dit?
@@ -1561,7 +1561,7 @@ MonoBehaviour:
     - DCAT
     - API
     - RDF
-  - points: 1
+  - points: 10
     question: '25. Het is van belang om de impact van je data te gaan kennen. Er zijn
       vier soorten impact:'
     answer: Economisch, sociaal, omgeving en politiek
@@ -1572,28 +1572,28 @@ MonoBehaviour:
     - Economisch, sociaal, omgeving en politiek
   characters:
   - minAge: 0
-    maxAge: 2
+    maxAge: 8
     character: {fileID: 1244396436}
-  - minAge: 3
-    maxAge: 5
+  - minAge: 9
+    maxAge: 20
     character: {fileID: 1415449916}
-  - minAge: 6
-    maxAge: 7
+  - minAge: 21
+    maxAge: 30
     character: {fileID: 1035703895}
-  - minAge: 8
-    maxAge: 11
+  - minAge: 31
+    maxAge: 40
     character: {fileID: 389378032}
-  - minAge: 12
-    maxAge: 13
+  - minAge: 41
+    maxAge: 52
     character: {fileID: 1604665702}
-  - minAge: 14
-    maxAge: 15
+  - minAge: 53
+    maxAge: 61
     character: {fileID: 1669511660}
-  - minAge: 16
-    maxAge: 17
+  - minAge: 62
+    maxAge: 70
     character: {fileID: 1016766790}
-  - minAge: 18
-    maxAge: 19
+  - minAge: 71
+    maxAge: 80
     character: {fileID: 964564172}
   options:
   - {fileID: 1344462071}
