@@ -7,7 +7,7 @@ public class WebURLScript : MonoBehaviour
 
     public void Open()
     {
-        Application.OpenURL("https://www.koopoverheid.nl/");
+        Application.OpenURL("https://data.overheid.nl/");
     }
 
     public void DownloadPdf()
