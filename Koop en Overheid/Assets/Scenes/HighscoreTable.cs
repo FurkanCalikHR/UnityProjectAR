@@ -56,11 +56,9 @@ public class HighscoreTable : MonoBehaviour
             switch (rank)
             {
                 default:
-                    rankString = rank + "TH"; break;
+                    rankString = rank + "e"; break;
 
-                case 1: rankString = "1ST"; break;
-                case 2: rankString = "2ND"; break;
-                case 3: rankString = "3RD"; break;
+                case 1: rankString = "1ste"; break;
             }
 
             entryTransform.Find("posText").GetComponent<Text>().text = rankString;
