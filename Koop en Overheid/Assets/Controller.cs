@@ -29,6 +29,7 @@ public class Controller : MonoBehaviour
 
     private StringBuilder wq = new StringBuilder();
 
+    private string[] optionsTags = { "A", "B", "C", "D" };
 
 
     void Start()
@@ -160,7 +161,6 @@ public class Controller : MonoBehaviour
 
     private void BuildDisplayText()
     {
-        string[] optionsTags = {"A", "B", "C", "D"};
         StringBuilder builder = new StringBuilder();
         builder.Append(currentQuestion.question + "\n");
         for(int i = 0; i < currentQuestion.answerOptions.Count; i++)
@@ -179,7 +179,7 @@ public class Controller : MonoBehaviour
     public void UpdateQuestionScore(Question currentQuestion)
     {
         wq.Append(currentQuestion.question + "\n");
-        wq.Append("Antwoord = " + currentQuestion.answer + "\n\n");
+        wq.Append("Antwoord = " + optionsTags[currentQuestion.answerOptions.IndexOf(currentQuestion.answer)] + ") " + currentQuestion.answer + "\n\n");
     }
 
     public void DisplayAnswer(bool correct)
