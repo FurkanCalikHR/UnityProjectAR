@@ -18,7 +18,7 @@ public class ARSceneChange : MonoBehaviour
 
     IEnumerator LoadSceneASync()
     {
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync("Zwempie");
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync("ArScene");
 
         slider.value = 0;
         loadingScreen.SetActive(true);

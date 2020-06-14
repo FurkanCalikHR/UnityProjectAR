@@ -1595,7 +1595,7 @@ MonoBehaviour:
     maxAge: 70
     character: {fileID: 1016766790}
   - minAge: 71
-    maxAge: 80
+    maxAge: 99
     character: {fileID: 964564172}
   options:
   - {fileID: 1344462071}

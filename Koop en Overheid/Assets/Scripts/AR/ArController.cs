@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Controller : MonoBehaviour
+public class ArController : MonoBehaviour
 {
 
     [SerializeField]
